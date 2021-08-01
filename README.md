@@ -2,7 +2,7 @@
 Repository containing Anki Flashcards &amp; source code to revise various programming languages
 
 ## Introduction
-This repository has taken content outlined in the section for each topic from the the [Learn X in Y minutes](https://learnxinyminutes.com/) site and put them into a form which can be easily learnt/revised using <a href="https://apps.ankiweb.net/">Anki</a> a cross platform app specifically designed for long term knowledge retention.
+This repository has taken content outlined in the section for each topic from the [Learn X in Y minutes](https://learnxinyminutes.com/) site and put them into a form which can be easily learnt/revised using <a href="https://apps.ankiweb.net/">Anki</a> a cross platform app specifically designed for long term knowledge retention.
 
 ## Notes
 Please note the modifications which have been made & where you can find updates.
