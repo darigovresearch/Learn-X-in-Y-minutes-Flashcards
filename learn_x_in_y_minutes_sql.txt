@@ -1,3 +1,18 @@
+Introduction|"<p>This deck has taken content outlined in the SQL article from the <a href=""https://learnxinyminutes.com/"">Learn X in Y minutes</a> site and put them into a form which can be easily learnt/revised using <a href=""https://apps.ankiweb.net/"">Anki</a> a cross platform app specifically designed for long term knowledge retention.</p>
+<h2>Notes</h2>
+<p>Please note the modifications which have been made &amp; where you can find updates.</p>
+<ol align=""left"">
+<li>All the content from each topic has been arranged in a way that can be easily learnt from Anki, separated into decks for each programming language/topic.</li>
+<li>Any updates, corrections or translations to the deck will be available at <a href=""https://github.com/darigovresearch/Learn-X-in-Y-minutes-Flashcards"">https://github.com/darigovresearch/Learn-X-in-Y-minutes-Flashcards</a> so do return periodically to check if you have the latest version.</li>
+<li>Modifications from the original work includes rearranging content to make it easier to learn/revise in Anki.</li>
+</ol>
+<p>Feel free to share the deck and give the repository a star so more people are likely to see this work and can get the most out of it.</p>
+<h2>License</h2>
+<p>Unless otherwise specified, everything in this deck is covered by the following licence:</p>
+<p><a href=""https://creativecommons.org/licenses/by-sa/3.0/deed.en_US""><img src=""https://licensebuttons.net/l/by-sa/3.0/88x31.png"" alt=""Creative Commons License"" data-canonical-src=""https://licensebuttons.net/l/by-sa/3.0/88x31.png"" style=""max-width:100%;""></a></p>
+<p>This work was based on the work <em><strong>Learn X in Y minutes</strong></em> started by <a href=""http://adambard.com/"">Adam Bard</a>, the content for this set of flashcards was based off an article originally contributed by Bob DuCharme and updated by <a href=""https://github.com/adambard/learnxinyminutes-docs/blame/master/sql.html.markdown"">contributors</a>, and licensed under a <a href=""https://creativecommons.org/licenses/by-sa/3.0/deed.en_US"">CC BY-SA 3.0</a> license.</p>
+<p>To see this work in full go to <a href=""https://learnxinyminutes.com/docs/sql/"">https://learnxinyminutes.com/docs/sql/</a></p>
+"
 What does each comment start with?|-- Comments start with two hyphens.
 What does each command end with?|; Each command ends with a semicolon.
 Is SQL case sensitive about key words?|No
