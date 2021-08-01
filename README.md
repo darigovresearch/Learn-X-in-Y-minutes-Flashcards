@@ -9,6 +9,7 @@ Please note the modifications which have been made & where you can find updates.
 1. All the content from each language has been arranged in a way that can be easily learnt from Anki, separated into decks for each programming language/topic.
 2. Any updates, corrections or translations to the deck will be available at <a href="https://github.com/darigovresearch/Learn-X-in-Y-minutes-Flashcards">https://github.com/darigovresearch/Learn-X-in-Y-minutes-Flashcards</a> so do return periodically to check if you have the latest version.
 3. Modifications from the original work includes rearranging content to make it easier to learn/revise in Anki.
+4. The front of every card has "(Learn X in Y minutes topic_name)" appended to the end so that if you have any other words in your collection, the Learn X in Y minutes definition will still be added when importing it.
 
 Feel free to share the decks and give the repository a star so more people are likely to see this work and can get the most out of it.
 
