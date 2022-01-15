@@ -1,0 +1,5 @@
+- [ ] I confirm that all the content in this pull request is original work and I am the original author
+- [ ] I have nothing that prevents me from submitting this work (like a clause in a work contract)
+- [ ] I understand that the work I am submitting will be released under the terms of the licence of this repository
+- [ ] I have followed the guidelines outlined in the Contributing section of [REAMDE.md](https://github.com/darigovresearch/Learn-X-in-Y-minutes-Flashcards#contributing)
+  - [ ] I have double-checked all of the above and checked the tick-boxes
