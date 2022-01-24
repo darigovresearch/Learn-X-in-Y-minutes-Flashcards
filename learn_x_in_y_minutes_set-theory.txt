@@ -1,122 +1,122 @@
 What is Set theory?¬Set theory is a branch of mathematics that studies sets, their operations, and their properties.
 What is a set?¬A set is a collection of disjoint items.
-What are some examples of basic symbols?¬`∪`, `∩`, `\`, `'`, `×`, `:`, `∈`, `⊆`, `⊂`, `∅`, `ℕ`, `ℤ`, `ℚ` and `ℝ`
+What are some examples of basic symbols?¬<code>∪</code>, <code>∩</code>, <code>\</code>, <code>'</code>, <code>×</code>, <code>:</code>, <code>∈</code>, <code>⊆</code>, <code>⊂</code>, <code>∅</code>, <code>ℕ</code>, <code>ℤ</code>, <code>ℚ</code> and <code>ℝ</code>
 What are some examples of operators?¬The union operator, the intersection operator, the exclusion operator, the complement operator and the cross operator.
-What is the symbol for the union operator?¬`∪`
-What does `∪` mean?¬Or
-How is `∪` pronounced?¬Cup
-What is the symbol for the intersection operator?¬`∩`
-What does `∩` mean?¬And
-How is `∩` pronounced?¬Cap
-What is the symbol for the exclusion operator?¬`\`
-What does `\` mean?¬Without
-What is the symbol for the complement operator?¬`'`
-What does `'` mean?¬The inverse of
-What is the symbol for the cross operator?¬`×`
-What does `×` mean?¬The Cartesian product of
+What is the symbol for the union operator?¬<code>∪</code>
+What does <code>∪</code> mean?¬Or
+How is <code>∪</code> pronounced?¬Cup
+What is the symbol for the intersection operator?¬<code>∩</code>
+What does <code>∩</code> mean?¬And
+How is <code>∩</code> pronounced?¬Cap
+What is the symbol for the exclusion operator?¬<code>\</code>
+What does <code>\</code> mean?¬Without
+What is the symbol for the complement operator?¬<code>'</code>
+What does <code>'</code> mean?¬The inverse of
+What is the symbol for the cross operator?¬<code>×</code>
+What does <code>×</code> mean?¬The Cartesian product of
 What are some examples of Qualifiers?¬The colon qualifier, the membership qualifier, the subset qualifier and the proper subset qualifier.
-What is the symbol for the colon qualifier?¬`:`
-What does `:` mean?¬Such that
-What is the symbol for the membership qualifier?¬`∈`
-What does `∈` mean?¬Belongs to
-What is the symbol for the subset qualifier?¬`⊆`
-What does `⊆` mean?¬Is a subset of
-What is the symbol for the proper subset qualifier?¬`⊂`
-What does `⊂` mean?¬Is a subset of but is not equal to
+What is the symbol for the colon qualifier?¬<code>:</code>
+What does <code>:</code> mean?¬Such that
+What is the symbol for the membership qualifier?¬<code>∈</code>
+What does <code>∈</code> mean?¬Belongs to
+What is the symbol for the subset qualifier?¬<code>⊆</code>
+What does <code>⊆</code> mean?¬Is a subset of
+What is the symbol for the proper subset qualifier?¬<code>⊂</code>
+What does <code>⊂</code> mean?¬Is a subset of but is not equal to
 What are some examples of Canonical sets?¬The empty set, the set of all natural numbers, the set of all integers, the set of all rational numbers, and the set of all real numbers.
-What is the symbol for the empty set, i.e. the set containing no items?¬`∅`
-What is the symbol for the set of all natural numbers?¬`ℕ`
-What is the symbol for the set of all integers?¬`ℤ`
-What is the symbol for the set of all rational numbers?¬`ℚ`
-What is the symbol for the set of all real numbers?¬`ℝ`
+What is the symbol for the empty set, i.e. the set containing no items?¬<code>∅</code>
+What is the symbol for the set of all natural numbers?¬<code>ℕ</code>
+What is the symbol for the set of all integers?¬<code>ℤ</code>
+What is the symbol for the set of all rational numbers?¬<code>ℚ</code>
+What is the symbol for the set of all real numbers?¬<code>ℝ</code>
 What are some caveats with respect to canonical sets?¬"
 <ol align=""left"">
     <li>Even though the empty set contains no items, the empty set is a subset of itself (and indeed every other set);</li>
     <li>Mathematicians generally do not universally agree on whether zero is a natural number, and textbooks will typically explicitly state whether or not the author considers zero to be a natural number.</li>
 </ol>
 "
-What is Cardinality?¬"The cardinality, or size, of a set is determined by the number of items in the set. The cardinality operator is given by a double pipe, `|...|`.
+What is Cardinality?¬"The cardinality, or size, of a set is determined by the number of items in the set. The cardinality operator is given by a double pipe, <code>|...|</code>.
 
-For example, if `S = { 1, 2, 4 }`, then `|S| = 3`."
+For example, if <code>S = { 1, 2, 4 }</code>, then <code>|S| = 3</code>."
 What is the Empty Set?¬"<ul align=""left"">
-    <li>The empty set can be constructed in set builder notation using impossible conditions, e.g. `∅ = { x : x ≠ x }`, or `∅ = { x : x ∈ N, x < 0 }`;</li>
+    <li>The empty set can be constructed in set builder notation using impossible conditions, e.g. <code>∅ = { x : x ≠ x }</code>, or <code>∅ = { x : x ∈ N, x < 0 }</code>;</li>
     <li>the empty set is always unique (i.e. there is one and only one empty set);</li>
     <li>the empty set is a subset of all sets;</li>
-    <li>the cardinality of the empty set is 0, i.e. `|∅| = 0`.</li>
+    <li>the cardinality of the empty set is 0, i.e. <code>|∅| = 0</code>.</li>
 </ul>"
 What are the ways of representing sets?¬Using literal Sets and Set builder notation
-What are literal Sets?¬"A set can be constructed literally by supplying a complete list of objects contained in the set. For example, `S = { a, b, c, d }`.
+What are literal Sets?¬"A set can be constructed literally by supplying a complete list of objects contained in the set. For example, <code>S = { a, b, c, d }</code>.
 
-Long lists may be shortened with ellipses as long as the context is clear. For example, `E = { 2, 4, 6, 8, ... }` is clearly the set of all even numbers, containing an infinite number of objects, even though we've only explicitly written four of them."
-What is Set Builder notation?¬"Set builder notation is a more descriptive way of constructing a set. It relies on a _subject_ and a _predicate_ such that `S = { subject : predicate }`. For example,
+Long lists may be shortened with ellipses as long as the context is clear. For example, <code>E = { 2, 4, 6, 8, ... }</code> is clearly the set of all even numbers, containing an infinite number of objects, even though we've only explicitly written four of them."
+What is Set Builder notation?¬"Set builder notation is a more descriptive way of constructing a set. It relies on a _subject_ and a _predicate_ such that <code>S = { subject : predicate }</code>. For example,
 
-```
+<pre>
 A = { x : x is a vowel } = { a, e, i, o, u, y}
 B = { x : x ∈ N, x < 10 } = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 }
 C = { x : x = 2k, k ∈ N } = { 0, 2, 4, 6, 8, ... }
-```
+</pre>
 
 Sometimes the predicate may ""leak"" into the subject, e.g.
 
-```
+<pre>
 D = { 2x : x ∈ N } = { 0, 2, 4, 6, 8, ... }
-```
+</pre>
 "
 What are some types or relations?¬Memberships & equalities
 What is a membership?¬"<ul align=""left"">
-    <li>If the value `a` is contained in the set `A`, then we say `a` belongs to `A` and represent this symbolically as `a ∈ A`.</li>
-    <li>If the value `a` is not contained in the set `A`, then we say `a` does not belong to `A` and represent this symbolically as `a ∉ A`.</li>
+    <li>If the value <code>a</code> is contained in the set <code>A</code>, then we say <code>a</code> belongs to <code>A</code> and represent this symbolically as <code>a ∈ A</code>.</li>
+    <li>If the value <code>a</code> is not contained in the set <code>A</code>, then we say <code>a</code> does not belong to <code>A</code> and represent this symbolically as <code>a ∉ A</code>.</li>
 </ul>"
 What is an equality?¬"<ul align=""left"">
-    <li>If two sets contain the same items then we say the sets are equal, e.g. `A = B`.</li>
-    <li>Order does not matter when determining set equality, e.g. `{ 1, 2, 3, 4 } = { 2, 3, 1, 4 }`.</li>
-    <li>Sets are disjoint, meaning elements cannot be repeated, e.g. `{ 1, 2, 2, 3, 4, 3, 4, 2 } = { 1, 2, 3, 4 }`.</li>
-    <li>Two sets `A` and `B` are equal if and only if `A ⊆ B` and `B ⊆ A`.</li>
+    <li>If two sets contain the same items then we say the sets are equal, e.g. <code>A = B</code>.</li>
+    <li>Order does not matter when determining set equality, e.g. <code>{ 1, 2, 3, 4 } = { 2, 3, 1, 4 }</code>.</li>
+    <li>Sets are disjoint, meaning elements cannot be repeated, e.g. <code>{ 1, 2, 2, 3, 4, 3, 4, 2 } = { 1, 2, 3, 4 }</code>.</li>
+    <li>Two sets <code>A</code> and <code>B</code> are equal if and only if <code>A ⊆ B</code> and <code>B ⊆ A</code>.</li>
 </ul>"
 What is an example of a special set?¬The Power Set
 What is the Power Set?¬"<ul align=""left"">
-    <li>Let `A` be any set. The set that contains all possible subsets of `A` is called a ""power set"" and is written as `P(A)`. If the set `A` contains `n` elements, then `P(A)` contains `2^n` elements.</li>
+    <li>Let <code>A</code> be any set. The set that contains all possible subsets of <code>A</code> is called a ""power set"" and is written as <code>P(A)</code>. If the set <code>A</code> contains <code>n</code> elements, then <code>P(A)</code> contains <code>2^n</code> elements.</li>
 </ul>
 
-```
+<pre>
 P(A) = { x : x ⊆ A }
-```
+</pre>
 "
 What are some examples of Set operations among two sets?¬Union, Intersection, Difference, Symmetrical difference and Cartesian product
 What is the Union among two sets?¬"
-Given two sets `A` and `B`, the union of the two sets are the items that appear in either `A` or `B`, written as `A ∪ B`.
+Given two sets <code>A</code> and <code>B</code>, the union of the two sets are the items that appear in either <code>A</code> or <code>B</code>, written as <code>A ∪ B</code>.
 
-```
+<pre>
 A ∪ B = { x : x ∈ A ∪ x ∈ B }
-```
+</pre>
 "
 What is the Intersection among two sets?¬"
-Given two sets `A` and `B`, the intersection of the two sets are the items that appear in both `A` and `B`, written as `A ∩ B`.
+Given two sets <code>A</code> and <code>B</code>, the intersection of the two sets are the items that appear in both <code>A</code> and <code>B</code>, written as <code>A ∩ B</code>.
 
-```
+<pre>
 A ∩ B = { x : x ∈ A, x ∈ B }
-```
+</pre>
 "
 What is the Difference among two sets?¬"
-Given two sets `A` and `B`, the set difference of `A` with `B` is every item in `A` that does not belong to `B`.
+Given two sets <code>A</code> and <code>B</code>, the set difference of <code>A</code> with <code>B</code> is every item in <code>A</code> that does not belong to <code>B</code>.
 
-```
+<pre>
 A \ B = { x : x ∈ A, x ∉ B }
-```
+</pre>
 "
 What is the Symmetrical difference among two sets?¬"
-Given two sets `A` and `B`, the symmetrical difference is all items among `A` and `B` that doesn't appear in their intersections.
+Given two sets <code>A</code> and <code>B</code>, the symmetrical difference is all items among <code>A</code> and <code>B</code> that doesn't appear in their intersections.
 
-```
+<pre>
 A △ B = { x : ((x ∈ A) ∩ (x ∉ B)) ∪ ((x ∈ B) ∩ (x ∉ A)) }
 
 A △ B = (A \ B) ∪ (B \ A)
-```
+</pre>
 "
 What is the Cartesian product among two sets?¬"
-Given two sets `A` and `B`, the cartesian product between `A` and `B` consists of a set containing all combinations of items of `A` and `B`.
+Given two sets <code>A</code> and <code>B</code>, the cartesian product between <code>A</code> and <code>B</code> consists of a set containing all combinations of items of <code>A</code> and <code>B</code>.
 
-```
+<pre>
 A × B = { (x, y) | x ∈ A, y ∈ B }
-```
+</pre>
 "
