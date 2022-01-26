@@ -1,32 +1,32 @@
-What is git?|Git is a distributed version control and source code management system. <br> It does this through a series of snapshots of your project, and it works with those snapshots to provide you with functionality to version and manage your source code.
-What is version control?|Version control is a system that records changes to a file(s), over time.
-What is centralized versioning?|Centralized version control focuses on synchronizing, tracking, and backing up files.
-What is distributed versioning?|Distributed version control focuses on sharing changes. Every change has a unique id.<br>Distributed systems have no defined structure. You could easily have a SVN style, centralized system, with git. <a href="http://git-scm.com/book/en/Getting-Started-About-Version-Control">Additional Information</a>
-Why use Git?|You should use git because <ul align="left"> <li>Git can work offline.</li> <li>It makes collaborating with others is easy!</li> <li>Branching is easy!</li> <li>Branching is fast!</li> <li>Merging is easy!</li> <li>Git is fast.</li> <li>Git is flexible.</li> </ul>
-What is a repository in git?|A set of files, directories, historical records, commits, and heads. Imagine it as a source code data structure, with the attribute that each source code "element" gives you access to its revision history, among other things.
-What is a git repository comprised of?|A git repository is comprised of the .git directory & working tree.
-What is a .git directory?|The .git directory contains all the configurations, logs, branches, HEAD, and more. <a href="http://gitready.com/advanced/2009/03/23/whats-inside-your-git-directory.html">Detailed List</a>.
-What is a working tree?|This is basically the directories and files in your repository. It is often referred to as your working directory.
-What is an index?|The Index is the staging area in git. It’s basically a layer that separates your working tree from the Git repository. This gives developers more power over what gets sent to the Git repository.
-What is a commit?|A git commit is a snapshot of a set of changes, or manipulations to your Working Tree. For example, if you added 5 files, and removed 2 others, these changes will be contained in a commit (or snapshot). This commit can then be pushed to other repositories, or not!
-What is a branch?|A branch is essentially a pointer to the last commit you made. As you go on committing, this pointer will automatically update to point to the latest commit.
-What is a tag?|A tag is a mark on specific point in history. Typically people use this functionality to mark release points (v1.0, and so on).
-What is a HEAD?|HEAD is a pointer that points to the current branch. A repository only has 1 active HEAD. head is a pointer that points to any commit. A repository can have any number of heads.
-What are the stages of git?|Modified, staged and committed
-What does it mean for a file to be modified?| Changes have been made to a file but file has not been committed to Git Database yet
-What does it mean for a file to be staged?|Marks a modified file to go into your next commit snapshot
-What does it mean for a file to be committed?|Files have been committed to the Git Database
-What are some conceptual resources to help understand git?|<ul align="left"> <li><a href="http://eagain.net/articles/git-for-computer-scientists/">Git For Computer Scientists</a></li> <li><a href="http://hoth.entp.com/output/git_for_designers.html">Git For Designers</a></li> </ul>
-What is the init command used for?|To create an empty Git repository. The Git repository’s settings, stored information, and more is stored in a directory (a folder) named “.git”.
-What is the command to initialise a repository?|$ git init
-What is the config command used for?|To configure settings. Whether it be for the repository, the system itself, or global configurations ( global config file is ~/.gitconfig ).
-How do you print & set the global email config variables?|$ git config --global user.email "MyEmail@Zoho.com"
-How do you print & set the global name config variables?|$ git config --global user.name "My Name"
-Where can you learn more about git config?|<a href="http://git-scm.com/docs/git-config">http://git-scm.com/docs/git-config</a>
-What is the help command used for?|To give you quick access to an extremely detailed guide of each command. Or to just give you a quick reminder of some semantics.
-How do you quickly check available commands?|$ git help
-How do you check all available commands?|$ git help -a
-How do you get command specific help from the user manual?|"<pre>git help &lt;command_here&gt;
+What is git? (Learn X in Y minutes git)|Git is a distributed version control and source code management system. <br> It does this through a series of snapshots of your project, and it works with those snapshots to provide you with functionality to version and manage your source code.
+What is version control? (Learn X in Y minutes git)|Version control is a system that records changes to a file(s), over time.
+What is centralized versioning? (Learn X in Y minutes git)|Centralized version control focuses on synchronizing, tracking, and backing up files.
+What is distributed versioning? (Learn X in Y minutes git)|Distributed version control focuses on sharing changes. Every change has a unique id.<br>Distributed systems have no defined structure. You could easily have a SVN style, centralized system, with git. <a href="http://git-scm.com/book/en/Getting-Started-About-Version-Control">Additional Information</a>
+Why use Git? (Learn X in Y minutes git)|You should use git because <ul align="left"> <li>Git can work offline.</li> <li>It makes collaborating with others is easy!</li> <li>Branching is easy!</li> <li>Branching is fast!</li> <li>Merging is easy!</li> <li>Git is fast.</li> <li>Git is flexible.</li> </ul>
+What is a repository in git? (Learn X in Y minutes git)|A set of files, directories, historical records, commits, and heads. Imagine it as a source code data structure, with the attribute that each source code "element" gives you access to its revision history, among other things.
+What is a git repository comprised of? (Learn X in Y minutes git)|A git repository is comprised of the .git directory & working tree.
+What is a .git directory? (Learn X in Y minutes git)|The .git directory contains all the configurations, logs, branches, HEAD, and more. <a href="http://gitready.com/advanced/2009/03/23/whats-inside-your-git-directory.html">Detailed List</a>.
+What is a working tree? (Learn X in Y minutes git)|This is basically the directories and files in your repository. It is often referred to as your working directory.
+What is an index? (Learn X in Y minutes git)|The Index is the staging area in git. It’s basically a layer that separates your working tree from the Git repository. This gives developers more power over what gets sent to the Git repository.
+What is a commit? (Learn X in Y minutes git)|A git commit is a snapshot of a set of changes, or manipulations to your Working Tree. For example, if you added 5 files, and removed 2 others, these changes will be contained in a commit (or snapshot). This commit can then be pushed to other repositories, or not!
+What is a branch? (Learn X in Y minutes git)|A branch is essentially a pointer to the last commit you made. As you go on committing, this pointer will automatically update to point to the latest commit.
+What is a tag? (Learn X in Y minutes git)|A tag is a mark on specific point in history. Typically people use this functionality to mark release points (v1.0, and so on).
+What is a HEAD? (Learn X in Y minutes git)|HEAD is a pointer that points to the current branch. A repository only has 1 active HEAD. head is a pointer that points to any commit. A repository can have any number of heads.
+What are the stages of git? (Learn X in Y minutes git)|Modified, staged and committed
+What does it mean for a file to be modified? (Learn X in Y minutes git)| Changes have been made to a file but file has not been committed to Git Database yet
+What does it mean for a file to be staged? (Learn X in Y minutes git)|Marks a modified file to go into your next commit snapshot
+What does it mean for a file to be committed? (Learn X in Y minutes git)|Files have been committed to the Git Database
+What are some conceptual resources to help understand git? (Learn X in Y minutes git)|<ul align="left"> <li><a href="http://eagain.net/articles/git-for-computer-scientists/">Git For Computer Scientists</a></li> <li><a href="http://hoth.entp.com/output/git_for_designers.html">Git For Designers</a></li> </ul>
+What is the init command used for? (Learn X in Y minutes git)|To create an empty Git repository. The Git repository’s settings, stored information, and more is stored in a directory (a folder) named “.git”.
+What is the command to initialise a repository? (Learn X in Y minutes git)|$ git init
+What is the config command used for? (Learn X in Y minutes git)|To configure settings. Whether it be for the repository, the system itself, or global configurations ( global config file is ~/.gitconfig ).
+How do you print & set the global email config variables? (Learn X in Y minutes git)|$ git config --global user.email "MyEmail@Zoho.com"
+How do you print & set the global name config variables? (Learn X in Y minutes git)|$ git config --global user.name "My Name"
+Where can you learn more about git config? (Learn X in Y minutes git)|<a href="http://git-scm.com/docs/git-config">http://git-scm.com/docs/git-config</a>
+What is the help command used for? (Learn X in Y minutes git)|To give you quick access to an extremely detailed guide of each command. Or to just give you a quick reminder of some semantics.
+How do you quickly check available commands? (Learn X in Y minutes git)|$ git help
+How do you check all available commands? (Learn X in Y minutes git)|$ git help -a
+How do you get command specific help from the user manual? (Learn X in Y minutes git)|"<pre>git help &lt;command_here&gt;
 or
 git &lt;command_here&gt; --help
 $ git help add
@@ -35,94 +35,94 @@ $ git help init
 $ git add --help
 $ git commit --help
 $ git init --help</pre>"
-What are ignore files used for?|To intentionally untrack file(s) & folder(s) from git. Typically meant for private & temp files which would otherwise be shared in the repository.
-How do you add a folder to the .gitignore?|$ echo "temp/" >> .gitignore
-How do you add a "private_key" to the .gitignore?|$ echo "private_key" >> .gitignore
-What is the status command used for?|To show differences between the index file (basically your working copy/repo) and the current HEAD commit.
-How do you display the branch, untracked files, changes and other differences?|$ git status
-What command can you use to learn other "tid bits" about git status?|$ git help status
-What is the add command used for?|To add files to the staging area/index. If you do not git add new files to the staging area/index, they will not be included in commits!
-How do you add a file in your current working directory?|$ git add HelloWorld.java
-How do you add a file in a nested directory?|$ git add /path/to/file/HelloWorld.c
-Does git add work with Regular Expressions?|Yes
-How do you add all java files in git?|$ git add ./*.java
-How can you add everything in your working directory to the staging area?|"$ git add -A
+What are ignore files used for? (Learn X in Y minutes git)|To intentionally untrack file(s) & folder(s) from git. Typically meant for private & temp files which would otherwise be shared in the repository.
+How do you add a folder to the .gitignore? (Learn X in Y minutes git)|$ echo "temp/" >> .gitignore
+How do you add a "private_key" to the .gitignore? (Learn X in Y minutes git)|$ echo "private_key" >> .gitignore
+What is the status command used for? (Learn X in Y minutes git)|To show differences between the index file (basically your working copy/repo) and the current HEAD commit.
+How do you display the branch, untracked files, changes and other differences? (Learn X in Y minutes git)|$ git status
+What command can you use to learn other "tid bits" about git status? (Learn X in Y minutes git)|$ git help status
+What is the add command used for? (Learn X in Y minutes git)|To add files to the staging area/index. If you do not git add new files to the staging area/index, they will not be included in commits!
+How do you add a file in your current working directory? (Learn X in Y minutes git)|$ git add HelloWorld.java
+How do you add a file in a nested directory? (Learn X in Y minutes git)|$ git add /path/to/file/HelloWorld.c
+Does git add work with Regular Expressions? (Learn X in Y minutes git)|Yes
+How do you add all java files in git? (Learn X in Y minutes git)|$ git add ./*.java
+How can you add everything in your working directory to the staging area? (Learn X in Y minutes git)|"$ git add -A
 This only adds a file to the staging area/index, it doesn’t commit it to the working directory/repo."
-What is the branch command used for?|To manage your branches. You can view, edit, create, delete branches using this command.
-How do you list existing branches & remotes?|$ git branch -a
-How do you create a new branch?|$ git branch myNewBranch
-How do you delete a branch?|$ git branch -d myBranch
-How do you rename a branch?|"<pre># git branch -m &lt;oldname&gt; &lt;newname&gt;
+What is the branch command used for? (Learn X in Y minutes git)|To manage your branches. You can view, edit, create, delete branches using this command.
+How do you list existing branches & remotes? (Learn X in Y minutes git)|$ git branch -a
+How do you create a new branch? (Learn X in Y minutes git)|$ git branch myNewBranch
+How do you delete a branch? (Learn X in Y minutes git)|$ git branch -d myBranch
+How do you rename a branch? (Learn X in Y minutes git)|"<pre># git branch -m &lt;oldname&gt; &lt;newname&gt;
 $ git branch -m myBranchName myNewBranchName
 </pre>"
-How do you edit a branch's description?|$ git branch myBranchName --edit-description
-What is the tag command used for?|Manage your tags
-How do you list tags?|$ git tag
-How do you create a annotated tag?|"$ git tag -a v2.0 -m 'my version 2.0' <br>
+How do you edit a branch's description? (Learn X in Y minutes git)|$ git branch myBranchName --edit-description
+What is the tag command used for? (Learn X in Y minutes git)|Manage your tags
+How do you list tags? (Learn X in Y minutes git)|$ git tag
+How do you create a annotated tag? (Learn X in Y minutes git)|"$ git tag -a v2.0 -m 'my version 2.0' <br>
 The -m specifies a tagging message, which is stored with the tag. If you don’t specify a message for an annotated tag, Git launches your editor so you can type it in."
-How do you show info about a tag?|"$ git show v2.0 <br>
+How do you show info about a tag? (Learn X in Y minutes git)|"$ git show v2.0 <br>
 That shows the tagger information, the date the commit was tagged, and the annotation message before showing the commit information."
-How do you push a single tag to remote?|$ git push origin v2.0
-How do you push a lot of tags to remote?|$ git push origin --tags
-What is the checkout command used for?|To update all files in the working tree to match the version in the index, or specified tree.
-How do you checkout a repo?|"$ git checkout <br>
+How do you push a single tag to remote? (Learn X in Y minutes git)|$ git push origin v2.0
+How do you push a lot of tags to remote? (Learn X in Y minutes git)|$ git push origin --tags
+What is the checkout command used for? (Learn X in Y minutes git)|To update all files in the working tree to match the version in the index, or specified tree.
+How do you checkout a repo? (Learn X in Y minutes git)|"$ git checkout <br>
 This defaults to master branch"
-How do you checkout a specified branch?|$ git checkout branchName
-How do you create a new branch & switch to it?|"$ git checkout -b newBranch <br>
+How do you checkout a specified branch? (Learn X in Y minutes git)|$ git checkout branchName
+How do you create a new branch & switch to it? (Learn X in Y minutes git)|"$ git checkout -b newBranch <br>
 This is equivalent to "git branch &lt;name&gt; git checkout &lt;name&gt;"
-What is the clone command used for?|It clones, or copies, an existing repository into a new directory. It also adds remote-tracking branches for each branch in the cloned repo, which allows you to push to a remote branch.
-How do you clone the learnxinyminutes-docs?|$ git clone https://github.com/adambard/learnxinyminutes-docs.git
-What is a shallow clone?|A faster cloning that pulls only latest snapshot
-How do you shallow clone a repository?|$ git clone --depth 1 https://github.com/adambard/learnxinyminutes-docs.git
-How do you clone only a specific branch?|$ git clone -b master-cn https://github.com/adambard/learnxinyminutes-docs.git --single-branch
-What is the commit command used for?|It stores the current contents of the index in a new “commit.” This commit contains the changes made and a message created by the user.
-How do you commit with a message?|$ git commit -m "Added multiplyNumbers() function to HelloWorld.c"
-How do you do a signed commit with a message?|"$ git commit -S -m ""signed commit message"" <br>
+What is the clone command used for? (Learn X in Y minutes git)|It clones, or copies, an existing repository into a new directory. It also adds remote-tracking branches for each branch in the cloned repo, which allows you to push to a remote branch.
+How do you clone the learnxinyminutes-docs? (Learn X in Y minutes git)|$ git clone https://github.com/adambard/learnxinyminutes-docs.git
+What is a shallow clone? (Learn X in Y minutes git)|A faster cloning that pulls only latest snapshot
+How do you shallow clone a repository? (Learn X in Y minutes git)|$ git clone --depth 1 https://github.com/adambard/learnxinyminutes-docs.git
+How do you clone only a specific branch? (Learn X in Y minutes git)|$ git clone -b master-cn https://github.com/adambard/learnxinyminutes-docs.git --single-branch
+What is the commit command used for? (Learn X in Y minutes git)|It stores the current contents of the index in a new “commit.” This commit contains the changes made and a message created by the user.
+How do you commit with a message? (Learn X in Y minutes git)|$ git commit -m "Added multiplyNumbers() function to HelloWorld.c"
+How do you do a signed commit with a message? (Learn X in Y minutes git)|"$ git commit -S -m ""signed commit message"" <br>
 user.signingkey must have been set with your GPG key e.g. git config --global user.signingkey 5173AAD5"
-How do you automatically stage modified or deleted files, except new files, and then commit?|$ git commit -a -m "Modified foo.php and removed bar.php"
-How do you change the last commit?|"$ git commit --amend -m ""Correct message"" <br>
+How do you automatically stage modified or deleted files, except new files, and then commit? (Learn X in Y minutes git)|$ git commit -a -m "Modified foo.php and removed bar.php"
+How do you change the last commit? (Learn X in Y minutes git)|"$ git commit --amend -m ""Correct message"" <br>
 This deletes previous commit with a fresh commit."
-What is git diff?|It shows differences between a file in the working directory, index and commits.
-What is the command to show the difference between your working dir and the index?|$ git diff
-How do you show the differences between the index and the most recent commit?|$ git diff --cached
-How do you show differences between your working dir and the most recent commit?|$ git diff HEAD
-What is the grep command used for?|It allows you to quickly search a repository.
-How do you set line numbers to be shown in grep search results?|"$ git config --global grep.lineNumber true <br>
+What is git diff? (Learn X in Y minutes git)|It shows differences between a file in the working directory, index and commits.
+What is the command to show the difference between your working dir and the index? (Learn X in Y minutes git)|$ git diff
+How do you show the differences between the index and the most recent commit? (Learn X in Y minutes git)|$ git diff --cached
+How do you show differences between your working dir and the most recent commit? (Learn X in Y minutes git)|$ git diff HEAD
+What is the grep command used for? (Learn X in Y minutes git)|It allows you to quickly search a repository.
+How do you set line numbers to be shown in grep search results? (Learn X in Y minutes git)|"$ git config --global grep.lineNumber true <br>
 Thanks to Travis Jeffery for this."
-How do you make search results more readable, including grouping?|"$ git config --global alias.g ""grep --break --heading --line-number"" <br>
+How do you make search results more readable, including grouping? (Learn X in Y minutes git)|"$ git config --global alias.g ""grep --break --heading --line-number"" <br>
 Thanks to Travis Jeffery for this."
-How do you search for "variableName" in all java files?|$ git grep 'variableName' -- '*.java'
-How do you search for a line that contains "arrayListName" and, "add" or "remove"?|<pre>$ git grep -e 'arrayListName' --and \( -e add -e remove \)</pre>
-Where can you find more examples of git and grep?|<a href="http://travisjeffery.com/b/2012/02/search-a-git-repo-like-a-ninja">Git Grep Ninja</a>
-What is the log command used for?|It displays commits to the repository.
-How do you show all commits?|$ git log
-How do you show only commit message & ref of a log?|$ git log --oneline
-How do you show merge commits only?|$ git log --merges
-How do you show all commits represented by an ASCII graph?|$ git log --graph
-What is the merge command used for?|To “Merge” in changes from external commits into the current branch.
-How do you merge the specified branch into the current branch?|$ git merge branchName
-How do you always generate a merge commit when merging?|$ git merge --no-ff branchName
-What is the mv command used for?|To rename or move a file
-How do you rename a file in git?|$ git mv HelloWorld.c HelloNewWorld.c
-How do you move a file in git?|$ git mv HelloWorld.c ./new/path/HelloWorld.c
-How do you force a rename or move?|"$ git mv -f myFile existingFile <br>
+How do you search for "variableName" in all java files? (Learn X in Y minutes git)|$ git grep 'variableName' -- '*.java'
+How do you search for a line that contains "arrayListName" and, "add" or "remove"? (Learn X in Y minutes git)|<pre>$ git grep -e 'arrayListName' --and \( -e add -e remove \)</pre>
+Where can you find more examples of git and grep? (Learn X in Y minutes git)|<a href="http://travisjeffery.com/b/2012/02/search-a-git-repo-like-a-ninja">Git Grep Ninja</a>
+What is the log command used for? (Learn X in Y minutes git)|It displays commits to the repository.
+How do you show all commits? (Learn X in Y minutes git)|$ git log
+How do you show only commit message & ref of a log? (Learn X in Y minutes git)|$ git log --oneline
+How do you show merge commits only? (Learn X in Y minutes git)|$ git log --merges
+How do you show all commits represented by an ASCII graph? (Learn X in Y minutes git)|$ git log --graph
+What is the merge command used for? (Learn X in Y minutes git)|To “Merge” in changes from external commits into the current branch.
+How do you merge the specified branch into the current branch? (Learn X in Y minutes git)|$ git merge branchName
+How do you always generate a merge commit when merging? (Learn X in Y minutes git)|$ git merge --no-ff branchName
+What is the mv command used for? (Learn X in Y minutes git)|To rename or move a file
+How do you rename a file in git? (Learn X in Y minutes git)|$ git mv HelloWorld.c HelloNewWorld.c
+How do you move a file in git? (Learn X in Y minutes git)|$ git mv HelloWorld.c ./new/path/HelloWorld.c
+How do you force a rename or move? (Learn X in Y minutes git)|"$ git mv -f myFile existingFile <br>
 ""existingFile"" already exists in the directory, will be overwritten"
-What are pulls in git?|It pulls from a repository and merges it with another branch.
-How do you update your local repo, by merging in new changes from the remote "origin" and "master" branch.?|"<pre>git pull &lt;remote&gt; &lt;branch&gt;
+What are pulls in git? (Learn X in Y minutes git)|It pulls from a repository and merges it with another branch.
+How do you update your local repo, by merging in new changes from the remote "origin" and "master" branch.? (Learn X in Y minutes git)|"<pre>git pull &lt;remote&gt; &lt;branch&gt;
 $ git pull origin master</pre>"
-What does git pull do by default?|By default, git pull will update your current branch by merging in new changes from its remote-tracking branch
-How do you merge in changes from remote branch and rebase?|"$ git pull origin master --rebase <br>
+What does git pull do by default? (Learn X in Y minutes git)|By default, git pull will update your current branch by merging in new changes from its remote-tracking branch
+How do you merge in changes from remote branch and rebase? (Learn X in Y minutes git)|"$ git pull origin master --rebase <br>
 Branch commits onto your local repo, like: ""git fetch &lt;remote&gt; &lt;branch&gt;, git rebase &lt;remote&gt;/&lt;branch&gt;"""
-What is the push command used for?|To push and merge changes from a branch to a remote & branch.
-How do you push and merge changes from a local repo to a remote named "origin" and "master" branch.?|"<pre>git push &lt;remote&gt; &lt;branch&gt;
+What is the push command used for? (Learn X in Y minutes git)|To push and merge changes from a branch to a remote & branch.
+How do you push and merge changes from a local repo to a remote named "origin" and "master" branch.? (Learn X in Y minutes git)|"<pre>git push &lt;remote&gt; &lt;branch&gt;
 $ git push origin master</pre>"
-By default what does git push do?|By default, git push will push and merge changes from the current branch to its remote-tracking branch.
-How do you link up current local branch with a remote branch?|"Add -u flag: <br>
+By default what does git push do? (Learn X in Y minutes git)|By default, git push will push and merge changes from the current branch to its remote-tracking branch.
+How do you link up current local branch with a remote branch? (Learn X in Y minutes git)|"Add -u flag: <br>
 $ git push -u origin master <br>
 Now, anytime you want to push from that same local branch, use shortcut: <br>
 $ git push"
-What is the stash command used for?|It takes the dirty state of your working directory and saves it on a stack of unfinished changes that you can reapply at any time.
-What's an example of using git stash?|"Let’s say you’ve been doing some work in your git repo, but you want to pull from the remote. Since you have dirty (uncommitted) changes to some files, you are not able to run git pull. Instead, you can run git stash to save your changes onto a stack!
+What is the stash command used for? (Learn X in Y minutes git)|It takes the dirty state of your working directory and saves it on a stack of unfinished changes that you can reapply at any time.
+What's an example of using git stash? (Learn X in Y minutes git)|"Let’s say you’ve been doing some work in your git repo, but you want to pull from the remote. Since you have dirty (uncommitted) changes to some files, you are not able to run git pull. Instead, you can run git stash to save your changes onto a stack!
 <pre>
 $ git stash
 Saved working directory and index state \
@@ -157,20 +157,20 @@ Now let’s apply our dirty changes back by popping them off the stack.
 git stash apply does the same thing <br>
 Now you’re ready to get back to work on your stuff! <br>
 <a href="http://git-scm.com/book/en/v1/Git-Tools-Stashing">Additional Reading.</a>
-What is the rebase command used for?|(Caution) It takes all changes that were committed on one branch, and replay them onto another branch. Do not rebase commits that you have pushed to a public repo.
-How do you rebase experimentBranch onto master?|"<pre># git rebase &lt;basebranch&gt; &lt;topicbranch&gt;
+What is the rebase command used for? (Learn X in Y minutes git)|(Caution) It takes all changes that were committed on one branch, and replay them onto another branch. Do not rebase commits that you have pushed to a public repo.
+How do you rebase experimentBranch onto master? (Learn X in Y minutes git)|"<pre># git rebase &lt;basebranch&gt; &lt;topicbranch&gt;
 $ git rebase master experimentBranch</pre>"
-Where can you find additional reading on rebasing?|<a href="http://git-scm.com/book/en/Git-Branching-Rebasing">http://git-scm.com/book/en/Git-Branching-Rebasing</a>
-What is the reset command used for?|(Caution) It resets the current HEAD to the specified state. This allows you to undo merges, pulls, commits, adds, and more. It’s a great command but also dangerous if you don’t know what you are doing.
-How do you reset the staging area, to match the latest commit but leave the directory unchanged?|$ git reset
-How do you reset the staging area, to match the latest commit, and overwrite working directory?|$ git reset --hard
-How do you moves the current branch tip to the specified commit but leave the directory unchanged?|"$ git reset 31f2bb1 <br>
+Where can you find additional reading on rebasing? (Learn X in Y minutes git)|<a href="http://git-scm.com/book/en/Git-Branching-Rebasing">http://git-scm.com/book/en/Git-Branching-Rebasing</a>
+What is the reset command used for? (Learn X in Y minutes git)|(Caution) It resets the current HEAD to the specified state. This allows you to undo merges, pulls, commits, adds, and more. It’s a great command but also dangerous if you don’t know what you are doing.
+How do you reset the staging area, to match the latest commit but leave the directory unchanged? (Learn X in Y minutes git)|$ git reset
+How do you reset the staging area, to match the latest commit, and overwrite working directory? (Learn X in Y minutes git)|$ git reset --hard
+How do you moves the current branch tip to the specified commit but leave the directory unchanged? (Learn X in Y minutes git)|"$ git reset 31f2bb1 <br>
 All changes still exist in the directory."
-How do you move the current branch tip backward to the specified commit and makes the working directory match?|"$ git reset --hard 31f2bb1 <br>
+How do you move the current branch tip backward to the specified commit and makes the working directory match? (Learn X in Y minutes git)|"$ git reset --hard 31f2bb1 <br>
 This deletes uncommitted changes and all commits after the specified commit."
-What is the reflog command used for?|"(Caution) Reflog will list most of the git commands you have done for a given time period, default 90 days. <br>
+What is the reflog command used for? (Learn X in Y minutes git)|"(Caution) Reflog will list most of the git commands you have done for a given time period, default 90 days. <br>
 This give you the chance to reverse any git commands that have gone wrong (for instance, if a rebase has broken your application)."
-What is an example of using the reflog command to reverse any git commands that have gone wrong?|"
+What is an example of using the reflog command to reverse any git commands that have gone wrong? (Learn X in Y minutes git)|"
 <ol align=""left"">
     <li>git reflog to list all of the git commands for the rebase</li><pre>
     38b323f HEAD@{0}: rebase -i (finish): returning to refs/heads/feature/add_git_reflog
@@ -183,13 +183,13 @@ What is an example of using the reflog command to reverse any git commands that 
     <li>‘git reset –hard HEAD@{5}’ this will reset your repo to that head</li>
     <li>You can start the rebase again or leave it alone.</li>
 </ol>"
-Where can you find additional reading on git reflog?|<a href="https://git-scm.com/docs/git-reflog">https://git-scm.com/docs/git-reflog</a>
-What is a revert in git?|Revert can be used to undo a commit. It should not be confused with reset which restores the state of a project to a previous point. Revert will add a new commit which is the inverse of the specified commit, thus reverting it.
-How do you revert a specified commit?|$ git revert <commit>
-What is the opposite of git add?|git rm removes files from the current working tree.
-How would you remove the file HelloWorld.c?|$ git rm HelloWorld.c
-How would you remove a file from a nested directory?|$ git rm /pather/to/the/file/HelloWorld.c
-Where can you find further information on git?|"<ul align=""left"">
+Where can you find additional reading on git reflog? (Learn X in Y minutes git)|<a href="https://git-scm.com/docs/git-reflog">https://git-scm.com/docs/git-reflog</a>
+What is a revert in git? (Learn X in Y minutes git)|Revert can be used to undo a commit. It should not be confused with reset which restores the state of a project to a previous point. Revert will add a new commit which is the inverse of the specified commit, thus reverting it.
+How do you revert a specified commit? (Learn X in Y minutes git)|$ git revert <commit>
+What is the opposite of git add? (Learn X in Y minutes git)|git rm removes files from the current working tree.
+How would you remove the file HelloWorld.c? (Learn X in Y minutes git)|$ git rm HelloWorld.c
+How would you remove a file from a nested directory? (Learn X in Y minutes git)|$ git rm /pather/to/the/file/HelloWorld.c
+Where can you find further information on git? (Learn X in Y minutes git)|"<ul align=""left"">
     <li><a href=""http://try.github.io/levels/1/challenges/1"">tryGit - A fun interactive way to learn Git.</a></li>
     <li><a href=""http://learngitbranching.js.org/"">Learn Git Branching - the most visual and interactive way to learn Git on the web</a></li>
     <li><a href=""https://blog.udemy.com/git-tutorial-a-comprehensive-guide/"">Udemy Git Tutorial: A Comprehensive Guide</a></li>
