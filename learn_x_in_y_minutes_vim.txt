@@ -1,3 +1,19 @@
+Introduction (Learn X in Y minutes vim)|"<p>This deck has taken content outlined in the vim article from the <a href=""https://learnxinyminutes.com/"">Learn X in Y minutes</a> site and put them into a form which can be easily learnt/revised using <a href=""https://apps.ankiweb.net/"">Anki</a> a cross platform app specifically designed for long term knowledge retention.</p>
+<h2>Notes</h2>
+<p>Please note the modifications which have been made &amp; where you can find updates.</p>
+<ol align=""left"">
+<li>All the content from each topic has been arranged in a way that can be easily learnt from Anki, separated into decks for each programming language/topic.</li>
+<li>Any updates, corrections or translations to the deck will be available at <a href=""https://github.com/darigovresearch/Learn-X-in-Y-minutes-Flashcards"">https://github.com/darigovresearch/Learn-X-in-Y-minutes-Flashcards</a> so do return periodically to check if you have the latest version.</li>
+<li>Modifications from the original work includes rearranging content to make it easier to learn/revise in Anki.</li>
+<li>The front of every card has ""(Learn X in Y minutes vim)"" appended to the end so that if you have any other words in your collection, the Learn X in Y minutes definition will still be added when importing it.</li>
+</ol>
+<p>Feel free to share the deck and give the repository a star so more people are likely to see this work and can get the most out of it.</p>
+<h2>License</h2>
+<p>Unless otherwise specified, everything in this deck is covered by the following licence:</p>
+<p><a href=""https://creativecommons.org/licenses/by-sa/3.0/deed.en_US""><img src=""https://licensebuttons.net/l/by-sa/3.0/88x31.png"" alt=""Creative Commons License"" data-canonical-src=""https://licensebuttons.net/l/by-sa/3.0/88x31.png"" style=""max-width:100%;""></a></p>
+<p>This work was based on the work <em><strong>Learn X in Y minutes</strong></em> started by <a href=""http://adambard.com/"">Adam Bard</a>, the content for this set of flashcards was based off an article originally contributed by RadhikaG and updated by <a href=""https://github.com/adambard/learnxinyminutes-docs/blame/master/vim.html.markdown"">11 contributors</a>, and licensed under a <a href=""https://creativecommons.org/licenses/by-sa/3.0/deed.en_US"">CC BY-SA 3.0</a> license.</p>
+<p>To see this work in full go to <a href=""https://learnxinyminutes.com/docs/vim/"">https://learnxinyminutes.com/docs/vim/</a></p>
+"
 What is Vim? (Learn X in Y minutes vim)|<a href="http://www.vim.org/">Vim</a> (Vi IMproved) is a clone of the popular vi editor for Unix. It is a text editor designed for speed and increased productivity, and is ubiquitous in most unix-based systems. It has numerous keybindings for speedy navigation to specific points in the file, and for fast editing.
 What is vimtutor? (Learn X in Y minutes vim)|vimtutor is a an excellent application that teaches you how to use Vim. It comes with the vim package during installation. You should be able to just run “vimtutor” on the command line to open this tutor. It will guide you through all the major features in vim.
 How do you open &lt;filename&gt; in vim? (Learn X in Y minutes vim)|vim &lt;filename&gt;
