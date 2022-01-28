@@ -1,130 +1,130 @@
-What is Vim?|<a href="http://www.vim.org/">Vim</a> (Vi IMproved) is a clone of the popular vi editor for Unix. It is a text editor designed for speed and increased productivity, and is ubiquitous in most unix-based systems. It has numerous keybindings for speedy navigation to specific points in the file, and for fast editing.
-What is vimtutor?|vimtutor is a an excellent application that teaches you how to use Vim. It comes with the vim package during installation. You should be able to just run “vimtutor” on the command line to open this tutor. It will guide you through all the major features in vim.
-How do you open &lt;filename&gt; in vim?|vim &lt;filename&gt;
-How do you open up built-in help docs about &lt;topic&gt; if any exists?|:help &lt;topic&gt;
-How do you quit vim?|:q
-How do you save the current file?|:w
-How do you save a file and quit vim?|:wq or ZZ
-How do you quit vim without saving file?|":q! or ZQ <br>
+What is Vim? (Learn X in Y minutes vim)|<a href="http://www.vim.org/">Vim</a> (Vi IMproved) is a clone of the popular vi editor for Unix. It is a text editor designed for speed and increased productivity, and is ubiquitous in most unix-based systems. It has numerous keybindings for speedy navigation to specific points in the file, and for fast editing.
+What is vimtutor? (Learn X in Y minutes vim)|vimtutor is a an excellent application that teaches you how to use Vim. It comes with the vim package during installation. You should be able to just run “vimtutor” on the command line to open this tutor. It will guide you through all the major features in vim.
+How do you open &lt;filename&gt; in vim? (Learn X in Y minutes vim)|vim &lt;filename&gt;
+How do you open up built-in help docs about &lt;topic&gt; if any exists? (Learn X in Y minutes vim)|:help &lt;topic&gt;
+How do you quit vim? (Learn X in Y minutes vim)|:q
+How do you save the current file? (Learn X in Y minutes vim)|:w
+How do you save a file and quit vim? (Learn X in Y minutes vim)|:wq or ZZ
+How do you quit vim without saving file? (Learn X in Y minutes vim)|":q! or ZQ <br>
 ! *forces* :q to execute, hence quiting vim without saving"
-What is a shorter version of :wq?|:x
-How do you undo in vim?|u
-How do you redo in vim?|CTRL+R
-How do you move left one character?|h
-How do you move down one line?|j
-How do you move up one line?|k
-How do you move right one character?|l
-How do you move back one full screen?|Ctrl+B
-How do you move forward one full screen?|Ctrl+F
-How do you move forward 1/2 a screen?|Ctrl+D
-How do you move back 1/2 a screen?|Ctrl+U
-How do you move to beginning of line?|0
-How do you move to end of line?|$
-How do you move to first non-blank character in line?|^
-How do you highlight all occurrences of word after cursor?|/word
-How do you highlight all occurrences of word before cursor?|?word
-How do you move cursor to next occurrence of word after a search?|n
-How do you move cursor to previous occerence of word after a search?|N
-How do you change 'foo' to 'bar' on every line in the file?|:%s/foo/bar/g
-How do you change 'foo' to 'bar' on the current line?|:s/foo/bar/g
-How do you replace new line characters with new line characters?|:%s/\n/\r/g
-How do you jump forward and land on &lt;character&gt;?|f&lt;character&gt;
-How do you jump forward and land right before &lt;character&gt;?|t&lt;character&gt;
-How do you jump forward and land on &lt;?|f&lt;
-How do you jump forward and land right before &lt;?|t&lt;
-How do you move forward by one word?|w
-How do you move back by one word?|b
-How do you move to end of current word?|e
-How do you go to the top of the file?|gg
-How do you go to the bottom of the file?|G
-How do you go to line number NUM (NUM is any number)?|:NUM
-How do you move to the top of the screen?|H
-How do you move to the middle of the screen?|M
-How do you move to the bottom of the screen?|L
-What are the help documents in Vim?|"Vim has built in help documentation that can accessed with :help &lt;topic&gt;. For example :help navigation will pull up documentation about how to navigate your workspace! <br>
+What is a shorter version of :wq? (Learn X in Y minutes vim)|:x
+How do you undo in vim? (Learn X in Y minutes vim)|u
+How do you redo in vim? (Learn X in Y minutes vim)|CTRL+R
+How do you move left one character? (Learn X in Y minutes vim)|h
+How do you move down one line? (Learn X in Y minutes vim)|j
+How do you move up one line? (Learn X in Y minutes vim)|k
+How do you move right one character? (Learn X in Y minutes vim)|l
+How do you move back one full screen? (Learn X in Y minutes vim)|Ctrl+B
+How do you move forward one full screen? (Learn X in Y minutes vim)|Ctrl+F
+How do you move forward 1/2 a screen? (Learn X in Y minutes vim)|Ctrl+D
+How do you move back 1/2 a screen? (Learn X in Y minutes vim)|Ctrl+U
+How do you move to beginning of line? (Learn X in Y minutes vim)|0
+How do you move to end of line? (Learn X in Y minutes vim)|$
+How do you move to first non-blank character in line? (Learn X in Y minutes vim)|^
+How do you highlight all occurrences of word after cursor? (Learn X in Y minutes vim)|/word
+How do you highlight all occurrences of word before cursor? (Learn X in Y minutes vim)|?word
+How do you move cursor to next occurrence of word after a search? (Learn X in Y minutes vim)|n
+How do you move cursor to previous occerence of word after a search? (Learn X in Y minutes vim)|N
+How do you change 'foo' to 'bar' on every line in the file? (Learn X in Y minutes vim)|:%s/foo/bar/g
+How do you change 'foo' to 'bar' on the current line? (Learn X in Y minutes vim)|:s/foo/bar/g
+How do you replace new line characters with new line characters? (Learn X in Y minutes vim)|:%s/\n/\r/g
+How do you jump forward and land on &lt;character&gt;? (Learn X in Y minutes vim)|f&lt;character&gt;
+How do you jump forward and land right before &lt;character&gt;? (Learn X in Y minutes vim)|t&lt;character&gt;
+How do you jump forward and land on &lt;? (Learn X in Y minutes vim)|f&lt;
+How do you jump forward and land right before &lt;? (Learn X in Y minutes vim)|t&lt;
+How do you move forward by one word? (Learn X in Y minutes vim)|w
+How do you move back by one word? (Learn X in Y minutes vim)|b
+How do you move to end of current word? (Learn X in Y minutes vim)|e
+How do you go to the top of the file? (Learn X in Y minutes vim)|gg
+How do you go to the bottom of the file? (Learn X in Y minutes vim)|G
+How do you go to line number NUM (NUM is any number)? (Learn X in Y minutes vim)|:NUM
+How do you move to the top of the screen? (Learn X in Y minutes vim)|H
+How do you move to the middle of the screen? (Learn X in Y minutes vim)|M
+How do you move to the bottom of the screen? (Learn X in Y minutes vim)|L
+What are the help documents in Vim? (Learn X in Y minutes vim)|"Vim has built in help documentation that can accessed with :help &lt;topic&gt;. For example :help navigation will pull up documentation about how to navigate your workspace! <br>
 :help can also be used without an option. This will bring up a default help dialog that aims to make getting started with vim more approachable!"
-What is Vim based on?|Vim is based on the concept on modes.
-What are the four modes of Vim?|Command Mode, Insert Mode, Visual Mode & Ex Mode
-What is Command Mode?|Vim starts up in this mode, it is used to navigate and write commands
-What is Insert Mode?|It is used to make changes in your file
-What is Visual Mode?|It is used to highlight text and do operations to them
-What is Ex mode?|It is used to drop down to the bottom with the ‘:’ prompt to enter commands
-How do you put vim into insert mode, before the cursor position?|i
-How do you put vim into insert mode, after the cursor position?|a
-How do you put vim into visual mode?|v
-How do you put vim into ex mode?|:
-How do you 'Escape' from whichever mode you're in, into Command mode?|&lt;esc&gt;
-How do you yank whatever is selected?|y
-How do you yank the current line?|yy
-How do you delete whatever is selected?|d
-How do you delete the current line?|dd
-How do you paste the copied text after the current cursor position?|p
-How do you paste the copied text before the current cursor position?|P
-How do you delete the character under the current cursor position?|x
-How can vim be thought of?|"Vim can be thought of as a set of commands in a ‘Verb-Modifier-Noun’ format, where: <br>
+What is Vim based on? (Learn X in Y minutes vim)|Vim is based on the concept on modes.
+What are the four modes of Vim? (Learn X in Y minutes vim)|Command Mode, Insert Mode, Visual Mode & Ex Mode
+What is Command Mode? (Learn X in Y minutes vim)|Vim starts up in this mode, it is used to navigate and write commands
+What is Insert Mode? (Learn X in Y minutes vim)|It is used to make changes in your file
+What is Visual Mode? (Learn X in Y minutes vim)|It is used to highlight text and do operations to them
+What is Ex mode? (Learn X in Y minutes vim)|It is used to drop down to the bottom with the ‘:’ prompt to enter commands
+How do you put vim into insert mode, before the cursor position? (Learn X in Y minutes vim)|i
+How do you put vim into insert mode, after the cursor position? (Learn X in Y minutes vim)|a
+How do you put vim into visual mode? (Learn X in Y minutes vim)|v
+How do you put vim into ex mode? (Learn X in Y minutes vim)|:
+How do you 'Escape' from whichever mode you're in, into Command mode? (Learn X in Y minutes vim)|&lt;esc&gt;
+How do you yank whatever is selected? (Learn X in Y minutes vim)|y
+How do you yank the current line? (Learn X in Y minutes vim)|yy
+How do you delete whatever is selected? (Learn X in Y minutes vim)|d
+How do you delete the current line? (Learn X in Y minutes vim)|dd
+How do you paste the copied text after the current cursor position? (Learn X in Y minutes vim)|p
+How do you paste the copied text before the current cursor position? (Learn X in Y minutes vim)|P
+How do you delete the character under the current cursor position? (Learn X in Y minutes vim)|x
+How can vim be thought of? (Learn X in Y minutes vim)|"Vim can be thought of as a set of commands in a ‘Verb-Modifier-Noun’ format, where: <br>
 Verb is your action <br>
 Modifier is how you’re doing your action <br>
 Noun is the object on which your action acts on <br>"
-What are a few important examples of ‘Verbs’?|"d # Delete <br>
+What are a few important examples of ‘Verbs’? (Learn X in Y minutes vim)|"d # Delete <br>
 c # Change <br>
 y # Yank (copy) <br>
 v # Visually select"
-What are a few important examples of ‘Modifiers’?|"i # Inside <br>
+What are a few important examples of ‘Modifiers’? (Learn X in Y minutes vim)|"i # Inside <br>
 a # Around <br>
 NUM # Number (NUM is any number) <br>
 f # Searches for something and lands on it <br>
 t # Searches for something and stops before it <br>
 / # Finds a string from cursor onwards <br>
 ? # Finds a string before cursor"
-What are a few important examples of ‘Nouns’?|"w # Word <br>
+What are a few important examples of ‘Nouns’? (Learn X in Y minutes vim)|"w # Word <br>
 s # Sentence <br>
 p # Paragraph <br>
 b # Block"
-How do you delete 2 words?|d2w
-How do you change inside sentence?|cis
-How do you yank inside paragraph (copy the para you're in)?|yip
-How do you change to open bracket/change the text from where you are to the next open bracket?|ct&lt;
-How do you delete till end of line?|d$
-How do you indent selection by one block?|&gt;
-How do you dedent selection by one block?|&lt;
-How do you revert the document back to how it was 15 minutes ago?|:earlier 15m
-How do you reverse reverting the document back to how it was 15 minutes ago?|:later 15m
-How do you swap position of consecutive lines, dd then p?|ddp
-How do you repeat the previous action?|.
-How do you save the current file as root?|:w !sudo tee %
-How do you set syntax highlighting to 'c'?|:set syntax=c
-How do you sort all lines?|:sort
-How do you sort all lines in reverse?|:sort!
-How do you sort all lines and remove duplicates?|:sort u
-How do you toggle letter case of selected text?|~
-How do you selected text to lower case?|u
-How do you selected text to upper case?|U
-How do you join the current line with the next line?|J
-How do you create fold from selected text?|zf
-How do you open current fold?|zo
-How do you close current fold?|zc
-How do you open all folds?|zR
-How do you close all folds?|zM
-What are macros?|Macros are basically recordable actions. When you start recording a macro, it records every action and command you use, until you stop recording. On invoking a macro, it applies the exact same sequence of actions and commands again on the text selection.
-How do you start recording a macro named 'a'?|qa
-How do you stop recording?|q
-How do you play back the macro?|@a
-What is the .vimrc file?|The .vimrc file can be used to configure Vim on startup.
-What is required in the .vimrc file for vim to be iMproved?|set nocompatible
-What is the command to put in your .vimrc to determine filetype from name to allow intelligent auto-indenting, etc. ?|filetype indent plugin on
-How do you enable syntax highlighting in your .vimrc?|syntax on
-What line do you need to add to your .vimrc to allow for better command-line completion?|set wildmenu
-How do you set vim to use case insensitive search except when using capital letters?|"By adding the following lines to your .vimrc <br>
+How do you delete 2 words? (Learn X in Y minutes vim)|d2w
+How do you change inside sentence? (Learn X in Y minutes vim)|cis
+How do you yank inside paragraph (copy the para you're in)? (Learn X in Y minutes vim)|yip
+How do you change to open bracket/change the text from where you are to the next open bracket? (Learn X in Y minutes vim)|ct&lt;
+How do you delete till end of line? (Learn X in Y minutes vim)|d$
+How do you indent selection by one block? (Learn X in Y minutes vim)|&gt;
+How do you dedent selection by one block? (Learn X in Y minutes vim)|&lt;
+How do you revert the document back to how it was 15 minutes ago? (Learn X in Y minutes vim)|:earlier 15m
+How do you reverse reverting the document back to how it was 15 minutes ago? (Learn X in Y minutes vim)|:later 15m
+How do you swap position of consecutive lines, dd then p? (Learn X in Y minutes vim)|ddp
+How do you repeat the previous action? (Learn X in Y minutes vim)|.
+How do you save the current file as root? (Learn X in Y minutes vim)|:w !sudo tee %
+How do you set syntax highlighting to 'c'? (Learn X in Y minutes vim)|:set syntax=c
+How do you sort all lines? (Learn X in Y minutes vim)|:sort
+How do you sort all lines in reverse? (Learn X in Y minutes vim)|:sort!
+How do you sort all lines and remove duplicates? (Learn X in Y minutes vim)|:sort u
+How do you toggle letter case of selected text? (Learn X in Y minutes vim)|~
+How do you selected text to lower case? (Learn X in Y minutes vim)|u
+How do you selected text to upper case? (Learn X in Y minutes vim)|U
+How do you join the current line with the next line? (Learn X in Y minutes vim)|J
+How do you create fold from selected text? (Learn X in Y minutes vim)|zf
+How do you open current fold? (Learn X in Y minutes vim)|zo
+How do you close current fold? (Learn X in Y minutes vim)|zc
+How do you open all folds? (Learn X in Y minutes vim)|zR
+How do you close all folds? (Learn X in Y minutes vim)|zM
+What are macros? (Learn X in Y minutes vim)|Macros are basically recordable actions. When you start recording a macro, it records every action and command you use, until you stop recording. On invoking a macro, it applies the exact same sequence of actions and commands again on the text selection.
+How do you start recording a macro named 'a'? (Learn X in Y minutes vim)|qa
+How do you stop recording? (Learn X in Y minutes vim)|q
+How do you play back the macro? (Learn X in Y minutes vim)|@a
+What is the .vimrc file? (Learn X in Y minutes vim)|The .vimrc file can be used to configure Vim on startup.
+What is required in the .vimrc file for vim to be iMproved? (Learn X in Y minutes vim)|set nocompatible
+What is the command to put in your .vimrc to determine filetype from name to allow intelligent auto-indenting, etc. ? (Learn X in Y minutes vim)|filetype indent plugin on
+How do you enable syntax highlighting in your .vimrc? (Learn X in Y minutes vim)|syntax on
+What line do you need to add to your .vimrc to allow for better command-line completion? (Learn X in Y minutes vim)|set wildmenu
+How do you set vim to use case insensitive search except when using capital letters? (Learn X in Y minutes vim)|"By adding the following lines to your .vimrc <br>
 set ignorecase <br>
 set smartcase"
-What line do you need to add to your .vimrc so that when opening a new line and no file-specific indenting is enabled, keep same indent as the line you're currently on?|set autoindent
-What line do you need to add to your .vimrc so that it displays line numbers on the left?|set number
-What line do you need to add to your .vimrc to set the number of visual spaces per TAB?|set tabstop=4
-What line do you need to add to your .vimrc to set the number of spaces in TAB when editing?|set softtabstop=4
-What line do you need to add to your .vimrc to set the number of spaces indented when reindent operations (&gt;&gt; and &lt;&lt;) are used?|set shiftwidth=4
-What line do you need to add to your .vimrc to set the convert TABs to spaces?|set expandtab
-What line do you need to add to your .vimrc to set the enable intelligent tabbing and spacing for indentation and alignment?|set smarttab
-What are some additional references you can use for learning about Vim?|"<a href=""http://www.vim.org/index.php"">Vim Home</a> <br>
+What line do you need to add to your .vimrc so that when opening a new line and no file-specific indenting is enabled, keep same indent as the line you're currently on? (Learn X in Y minutes vim)|set autoindent
+What line do you need to add to your .vimrc so that it displays line numbers on the left? (Learn X in Y minutes vim)|set number
+What line do you need to add to your .vimrc to set the number of visual spaces per TAB? (Learn X in Y minutes vim)|set tabstop=4
+What line do you need to add to your .vimrc to set the number of spaces in TAB when editing? (Learn X in Y minutes vim)|set softtabstop=4
+What line do you need to add to your .vimrc to set the number of spaces indented when reindent operations (&gt;&gt; and &lt;&lt;) are used? (Learn X in Y minutes vim)|set shiftwidth=4
+What line do you need to add to your .vimrc to set the convert TABs to spaces? (Learn X in Y minutes vim)|set expandtab
+What line do you need to add to your .vimrc to set the enable intelligent tabbing and spacing for indentation and alignment? (Learn X in Y minutes vim)|set smarttab
+What are some additional references you can use for learning about Vim? (Learn X in Y minutes vim)|"<a href=""http://www.vim.org/index.php"">Vim Home</a> <br>
 $ vimtutor <br>
 <a href=""https://danielmiessler.com/study/vim/"">A vim Tutorial and Primer</a> <br>
 <a href=""http://stackoverflow.com/questions/726894/what-are-the-dark-corners-of-vim-your-mom-never-told-you-about"">What are the dark corners of Vim your mom never told you about? (Stack Overflow thread)</a> <br>
