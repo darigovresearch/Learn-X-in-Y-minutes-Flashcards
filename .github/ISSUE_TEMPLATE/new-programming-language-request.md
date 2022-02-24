@@ -9,4 +9,4 @@ assignees: ''
 
 The following programming language has been requested to be adapted into flashcards - Programming language name
 
-Link to Learn X in Y minutes page for reference -
+Link to Learn X in Y minutes page for reference - 
