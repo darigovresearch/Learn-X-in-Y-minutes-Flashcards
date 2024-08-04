@@ -1,114 +1,104 @@
----
-language: restructured text (RST)
-contributors:
-    - ["DamienVGN", "https://github.com/martin-damien"]
-    - ["Andre Polykanine", "https://github.com/Oire"]
-filename: restructuredtext.rst
----
-
-RST, Restructured Text, is a file format created by the Python community to write documentation. It is part of [Docutils](https://docutils.sourceforge.io/rst.html).
-
-RST is a markup language like HTML but is much more lightweight and easier to read.
-
-
-## Installation
-
-To use Restructured Text, you will have to install [Python](http://www.python.org) and the `docutils` package.
-
-`docutils` can be installed using the commandline:
-
-```bash
+What is Restructured Text?|RST, Restructured Text, is a file format created by the Python community to write documentation. It is part of <a href="https://docutils.sourceforge.io/rst.html">Docutils</a>. RST is a markup language like HTML but is much more lightweight and easier to read.
+How do you install Restructured Text?|"To use Restructured Text, you will have to install <a href=""http://www.python.org"">Python</a> and the <code>docutils</code> package.
+<br>
+<br>
+<code>docutils</code> can be installed using the commandline:
+<br>
+<br>
+<code>
 $ easy_install docutils
-```
-
-If your system has `pip`, you can use it too:
-
-```bash
+</code>
+<br>
+<br>
+If your system has <code>pip</code>, you can use it too:
+<br>
+<br>
+<code>
 $ pip install docutils
-```
-
-
-## File syntax
-
-A simple example of the file syntax:
-
-```
-.. Lines starting with two dots are special commands. But if no command can be found, the line is considered as a comment.
-
+</code>
+"
+How do you use special commands or make comments?|Lines starting with two dots are special commands. But if no command can be found, the line is considered as a comment. i.e. <code>.. Lines starting with two dots are special commands. But if no command can be found, the line is considered as a comment.</code>
+How do you generate titles?|"<br>
+<pre>
 =========================================================
 Main titles are written using equals signs over and under
 =========================================================
-
+</pre>
+<br>
 Note that each character, including spaces, needs an equals sign above and below.
-
+<br>
+<pre>
 Titles also use equals signs but are only underneath
 ====================================================
-
+</pre>"
+How do you generate subtitles?|"<pre>
 Subtitles with dashes
 ---------------------
+</pre>"
+How do you make italic text?|Using single asterisks i.e. <code>*italic*</code>
+How do you make bold text?|Using double asterisks i.e. <code>**bold**</code>
+How do you mark text as code?|"You can ""mark"" text as code with double backquote i.e. <br> <code>``print()``</code>
+"
+How do you use special characters?|Special characters can be escaped using a backslash, e.g. <br> <code>\\</code> or <code>\*</code>.
+How do you generate lists?|"<p>Lists are similar to Markdown, but a little more involved.</p>
 
-You can put text in *italic* or in **bold**, you can "mark" text as code with double backquote ``print()``.
-
-Special characters can be escaped using a backslash, e.g. \\ or \*.
-
-Lists are similar to Markdown, but a little more involved.
-
-Remember to line up list symbols (like - or \*) with the left edge of the previous text block, and remember to use blank lines to separate new lists from parent lists:    
-
+<p>Remember to line up list symbols (like - or \*) with the left edge of the previous text block, and remember to use blank lines to separate new lists from parent lists:</p>
+<pre>
 - First item
 - Second item
 
   - Sub item
-    
+
 - Third item
-
-or
-
+</pre>
+<p>or</p>
+<pre>
 * First item
 * Second item
-    
+
   * Sub item
 
 * Third item
-
-Tables are really easy to write:
-
+</pre>
+"
+How do you generate tables?|"Tables are really easy to write:
+<pre>
 =========== ========
 Country     Capital
 =========== ========
 France      Paris
 Japan       Tokyo
 =========== ========
-
+</pre>
 More complex tables can be done easily (merged columns and/or rows) but I suggest you to read the complete doc for this. :)
-
-There are multiple ways to make links:
-
-- By adding an underscore after a word : GitHub_ and by adding the target URL after the text (this way has the advantage of not inserting unnecessary URLs in the visible text).
-- By typing a full comprehensible URL : https://github.com/ (will be automatically converted to a link).
-- By making a more Markdown-like link: `GitHub <https://github.com/>`_ .
-
-.. _GitHub: https://github.com/
-```
-
-
-## How to Use It
-
-RST comes with docutils where you have `rst2html`, for example:
-
-```bash
+"
+How do you generate links?|"There are multiple ways to make links:
+<ul align=""left"">
+<li>By adding an underscore after a word : <code>Github_</code> and by adding the target URL after the text (this way has the advantage of not inserting unnecessary URLs in the visible text).</li>
+<li>By typing a full comprehensible URL : https://github.com/ (will be automatically converted to a link)</li>
+<li>By making a more Markdown-like link: <code>`Github <https://github.com/>`_</code>.</li>
+</ul>
+<code>.. _Github: https://github.com/</code>
+"
+How do you use a .rst file to generate a html file?|"RST comes with docutils where you have <code>rst2html</code>, for example:
+<br>
+<br>
+<code>
 $ rst2html myfile.rst output.html
-```
-
-*Note : On some systems the command could be rst2html.py*
-
-But there are more complex applications that use the RST format:
-
-- [Pelican](http://blog.getpelican.com/), a static site generator
-- [Sphinx](http://sphinx-doc.org/), a documentation generator
-- and many others
-
-
-## Readings
-
-- [Official quick reference](http://docutils.sourceforge.net/docs/user/rst/quickref.html)
+</code>
+<br>
+<br>
+<b>Note : On some systems the command could be rst2html.py</b>
+"
+What are some more complex applications that use the RST format?|"
+<ul align=""left"">
+	<li><a href=""http://blog.getpelican.com/"">Pelican</a>, a static site generator</li>
+	<li><a href=""http://sphinx-doc.org/"">Sphinx</a>, a documentation generator</li>
+	<li>and many others</li>
+</ul>
+"
+What is some additional reading?|"
+<ul align=""left"">
+	<li><a href=""http://docutils.sourceforge.net/docs/user/rst/quickref.html"">Official quick reference</a></li>
+</ul>
+"
