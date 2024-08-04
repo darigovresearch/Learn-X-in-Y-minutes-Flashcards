@@ -33,9 +33,9 @@ If your system has <code>pip</code>, you can use it too:
 $ pip install docutils
 </code>
 "
-How do you use special commands or make comments? (Learn X in Y Minutes Restructured Text)|Lines starting with two dots are special commands. But if no command can be found, the line is considered as a comment. i.e. <code>.. Lines starting with two dots are special commands. But if no command can be found, the line is considered as a comment.</code>
+How do you use special commands or make comments? (Learn X in Y Minutes Restructured Text)|Lines starting with two dots are special commands. But if no command can be found, the line is considered as a comment. i.e. <pre align=""left"">.. Lines starting with two dots are special commands. But if no command can be found, the line is considered as a comment.</pre>
 How do you generate titles? (Learn X in Y Minutes Restructured Text)|"<br>
-<pre>
+<pre align=""left"">
 =========================================================
 Main titles are written using equals signs over and under
 =========================================================
@@ -43,11 +43,11 @@ Main titles are written using equals signs over and under
 <br>
 Note that each character, including spaces, needs an equals sign above and below.
 <br>
-<pre>
+<pre align=""left"">
 Titles also use equals signs but are only underneath
 ====================================================
 </pre>"
-How do you generate subtitles? (Learn X in Y Minutes Restructured Text)|"<pre>
+How do you generate subtitles? (Learn X in Y Minutes Restructured Text)|"<pre align=""left"">
 Subtitles with dashes
 ---------------------
 </pre>"
@@ -59,7 +59,7 @@ How do you use special characters? (Learn X in Y Minutes Restructured Text)|Spec
 How do you generate lists? (Learn X in Y Minutes Restructured Text)|"<p>Lists are similar to Markdown, but a little more involved.</p>
 
 <p>Remember to line up list symbols (like - or \*) with the left edge of the previous text block, and remember to use blank lines to separate new lists from parent lists:</p>
-<pre>
+<pre align=""left"">
 - First item
 - Second item
 
@@ -68,7 +68,7 @@ How do you generate lists? (Learn X in Y Minutes Restructured Text)|"<p>Lists ar
 - Third item
 </pre>
 <p>or</p>
-<pre>
+<pre align=""left"">
 * First item
 * Second item
 
@@ -78,7 +78,7 @@ How do you generate lists? (Learn X in Y Minutes Restructured Text)|"<p>Lists ar
 </pre>
 "
 How do you generate tables? (Learn X in Y Minutes Restructured Text)|"Tables are really easy to write:
-<pre>
+<pre align=""left"">
 =========== ========
 Country     Capital
 =========== ========
@@ -94,7 +94,7 @@ How do you generate links? (Learn X in Y Minutes Restructured Text)|"There are m
 <li>By typing a full comprehensible URL : https://github.com/ (will be automatically converted to a link)</li>
 <li>By making a more Markdown-like link: <code>`Github <https://github.com/>`_</code>.</li>
 </ul>
-<code>.. _Github: https://github.com/</code>
+<pre align=""left"">.. _Github: https://github.com/</pre>
 "
 How do you use a .rst file to generate a html file? (Learn X in Y Minutes Restructured Text)|"RST comes with docutils where you have <code>rst2html</code>, for example:
 <br>
