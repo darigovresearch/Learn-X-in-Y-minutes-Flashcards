@@ -1,111 +1,106 @@
----
-language: Rust
-contributors:
-    - ["P1start", "http://p1start.github.io/"]
-filename: learnrust.rs
----
-
-Rust is a programming language developed by Mozilla Research.
+What should you know about rust?|"Rust is a programming language developed by Mozilla Research.
 Rust combines low-level control over performance with high-level convenience and
 safety guarantees.
-
-It achieves these goals without requiring a garbage collector or runtime, making
-it possible to use Rust libraries as a "drop-in replacement" for C.
-
-Rust’s first release, 0.1, occurred in January 2012, and for 3 years development
+"
+How does rust achieve its goals?|"It achieves these goals without requiring a garbage collector or runtime, making
+it possible to use Rust libraries as a ""drop-in replacement"" for C.
+"
+What should you know about the 0.1 release of rust?|"Rust’s first release, 0.1, occurred in January 2012, and for 3 years development
 moved so quickly that until recently the use of stable releases was discouraged
 and instead the general advice was to use nightly builds.
-
-On May 15th 2015, Rust 1.0 was released with a complete guarantee of backward
+"
+What should you know about the 1.0 release of rust?|"On May 15th 2015, Rust 1.0 was released with a complete guarantee of backward
 compatibility. Improvements to compile times and other aspects of the compiler are
 currently available in the nightly builds. Rust has adopted a train-based release
 model with regular releases every six weeks. Rust 1.1 beta was made available at
 the same time of the release of Rust 1.0.
-
-Although Rust is a relatively low-level language, it has some functional
+"
+What should you know about rust with respect to functional concepts?|"Although Rust is a relatively low-level language, it has some functional
 concepts that are generally found in higher-level languages. This makes
 Rust not only fast, but also easy and efficient to code in.
-
-```rust
+"
+What do comments look like in rust?"|"<pre align=""left"">
 // This is a comment. Line comments look like this...
 // and extend multiple lines like this.
 
 /* Block comments
   /* can be nested. */ */
+</pre>
+"
+Can block comments be nested in rust?|Yes
 
+What do documentation comments look like in rust?|"<pre align=""left"">
 /// Documentation comments look like this and support markdown notation.
 /// # Examples
 ///
 /// ```
 /// let five = 5
 /// ```
-
-///////////////
-// 1. Basics //
-///////////////
-
+</pre>
+"
+What do documentation comments support markdown notation?|Yes
+How do you do functions in rust?|"<pre align=""left"">
 #[allow(dead_code)]
-// Functions
-// `i32` is the type for 32-bit signed integers
 fn add2(x: i32, y: i32) -> i32 {
     // Implicit return (no semicolon)
     x + y
 }
-
+</pre>
+"
+What does i32 mean in rust?|<code>i32</code> is the type for 32-bit signed integers
+How do you do a main function in rust?|"<pre align=""left"">
 #[allow(unused_variables)]
 #[allow(unused_assignments)]
 #[allow(dead_code)]
-// Main function
 fn main() {
-    // Numbers //
 
-    // Immutable bindings
-    let x: i32 = 1;
-
-    // Integer/float suffixes
-    let y: i32 = 13i32;
-    let f: f64 = 1.3f64;
-
-    // Type inference
-    // Most of the time, the Rust compiler can infer what type a variable is, so
-    // you don’t have to write an explicit type annotation.
-    // Throughout this tutorial, types are explicitly annotated in many places,
-    // but only for demonstrative purposes. Type inference can handle this for
-    // you most of the time.
-    let implicit_x = 1;
-    let implicit_f = 1.3;
-
-    // Arithmetic
-    let sum = x + y + 13;
-
-    // Mutable variable
-    let mut mutable = 1;
-    mutable = 4;
-    mutable += 2;
-
-    // Strings //
-
-    // String literals
-    let x: &str = "hello world!";
-
-    // Printing
-    println!("{} {}", f, x); // 1.3 hello world
-
-    // A `String` – a heap-allocated string
-    // Stored as a `Vec<u8>` and always holds a valid UTF-8 sequence, 
-    // which is not null terminated.
-    let s: String = "hello world".to_string();
-
-    // A string slice – an immutable view into another string
-    // This is basically an immutable pointer and length of a string – it
-    // doesn’t actually contain the contents of a string, just a pointer to
-    // the beginning and a length of a string buffer,
-    // statically allocated or contained in another object (in this case, `s`).
-    // The string slice is like a view `&[u8]` into `Vec<T>`.
-    let s_slice: &str = &s;
-
-    println!("{} {}", s, s_slice); // hello world hello world
-
+}
+</pre>
+"
+How do you do Immutable bindings in rust?|"<pre align=""left"">
+let x: i32 = 1;
+</pre>
+"
+How do you do Integer/float suffixes in rust?|"<pre align=""left"">
+let y: i32 = 13i32;
+let f: f64 = 1.3f64;
+</pre>
+"
+What should you know about type inferences in rust?|Most of the time, the Rust compiler can infer what type a variable is, so you don’t have to write an explicit type annotation. Throughout this tutorial, types are explicitly annotated in many places, but only for demonstrative purposes. Type inference can handle this for you most of the time.
+What is an example of type inferences in rust?|"<pre align=""left"">
+let implicit_x = 1;
+let implicit_f = 1.3;
+</pre>
+"
+How do you do arithmetic in rust?|"<pre align=""left"">
+let sum = x + y + 13;
+</pre>
+"
+How do you do mutable variables in rust?|"<pre align=""left"">
+let mut mutable = 1;
+mutable = 4;
+mutable += 2;
+</pre>
+"
+How do you do string literals in rust?|"<pre align=""left"">
+let x: &str = ""hello world!"";
+</pre>
+"
+How do you do printing in rust?|"<pre align=""left"">
+println!(""{} {}"", f, x); // 1.3 hello world
+</pre>
+"
+"What is a <code>String</code> in rust?"|"A `String` – a heap-allocated string. Stored as a <code>Vec<u8></code> and always holds a valid UTF-8 sequence, which is not null terminated."
+What is an example of a <code>String</code> in rust?|"<pre align=""left"">
+let s: String = ""hello world"".to_string();
+</pre>
+"
+What is a string slice in rust?"|"A string slice – an immutable view into another string. This is basically an immutable pointer and length of a string – it doesn’t actually contain the contents of a string, just a pointer to the beginning and a length of a string buffer, statically allocated or contained in another object (in this case, <code>s</code>). The string slice is like a view <code>&[u8]</code> into <code>Vec<T></code>."
+What is an example of a string slice in rust?|"<pre align=""left"">
+let s_slice: &str = &s;
+println!(""{} {}"", s, s_slice); // hello world hello world
+</pre>
+"
     // Vectors/arrays //
 
     // A fixed-size array
@@ -256,53 +251,54 @@ fn main() {
         FooBar { x: _, y: OptionalI32::Nothing } =>
             println!("The second number is Nothing!"),
     }
-
-    /////////////////////
-    // 4. Control flow //
-    /////////////////////
-
-    // `for` loops/iteration
-    let array = [1, 2, 3];
-    for i in array {
-        println!("{}", i);
-    }
-
-    // Ranges
-    for i in 0u32..10 {
-        print!("{} ", i);
-    }
-    println!("");
-    // prints `0 1 2 3 4 5 6 7 8 9 `
-
-    // `if`
-    if 1 == 1 {
-        println!("Maths is working!");
-    } else {
-        println!("Oh no...");
-    }
-
-    // `if` as expression
-    let value = if true {
-        "good"
-    } else {
-        "bad"
-    };
-
-    // `while` loop
-    while 1 == 1 {
-        println!("The universe is operating normally.");
-        // break statement gets out of the while loop.
-        //  It avoids useless iterations.
-        break
-    }
-
-    // Infinite loop
-    loop {
-        println!("Hello!");
-        // break statement gets out of the loop
-        break
-    }
-
+How do you for loops/iteration with arrays in rust?|"<pre align=""left"">
+let array = [1, 2, 3];
+for i in array {
+    println!(""{}"", i);
+}
+</pre>
+"
+How do you for loops/iteration with ranges in rust?|"<pre align=""left"">
+for i in 0u32..10 {
+    print!(""{} "", i);
+}
+println!("""");
+// prints `0 1 2 3 4 5 6 7 8 9 `
+</pre>
+"
+How do you if statments in rust?|"<pre align=""left"">
+if 1 == 1 {
+    println!(""Maths is working!"");
+} else {
+    println!(""Oh no..."");
+}
+</pre>
+"
+How do you if statments as an expression in rust?|"<pre align=""left"">
+let value = if true {
+    ""good""
+} else {
+    ""bad""
+};
+</pre>
+"
+How do you while loops in rust?|"<pre align=""left"">
+while 1 == 1 {
+    println!(""The universe is operating normally."");
+    // break statement gets out of the while loop.
+    //  It avoids useless iterations.
+    break
+}
+</pre>
+"
+How do you infinite loops in rust?|"<pre align=""left"">
+loop {
+    println!(""Hello!"");
+    // break statement gets out of the loop
+    break
+}
+</pre>
+"
     /////////////////////////////////
     // 5. Memory safety & pointers //
     /////////////////////////////////
@@ -345,19 +341,17 @@ fn main() {
     ref_var2; // no-op, but counts as a use and keeps the borrow active until here
 }
 ```
+What is some further reading for rust?|"
+<p>For a deeper-yet-still-fast explanation into Rust and its symbols/keywords, the
+<a href=""https://fasterthanli.me/articles/a-half-hour-to-learn-rust"">half-hour to learn Rust</a>
+article by Fasterthanlime explains (almost) everything in a clear and concise way!</p>
 
-## Further reading
+<p>There’s a lot more to Rust—this is just the basics of Rust so you can understand
+the most important things. To learn more about Rust, read <a href=""http://doc.rust-lang.org/book/index.html"">The Rust Programming
+Language</a> and check out the
+<a href=""http://reddit.com/r/rust"">/r/rust</a> subreddit. The folks on the #rust channel on
+irc.mozilla.org are also always keen to help newcomers.</p>
 
-For a deeper-yet-still-fast explanation into Rust and its symbols/keywords, the
-[half-hour to learn Rust](https://fasterthanli.me/articles/a-half-hour-to-learn-rust)
-article by Fasterthanlime explains (almost) everything in a clear and concise way!
-
-There’s a lot more to Rust—this is just the basics of Rust so you can understand
-the most important things. To learn more about Rust, read [The Rust Programming
-Language](http://doc.rust-lang.org/book/index.html) and check out the
-[/r/rust](http://reddit.com/r/rust) subreddit. The folks on the #rust channel on
-irc.mozilla.org are also always keen to help newcomers.
-
-You can also try out features of Rust with an online compiler at the official
-[Rust Playground](https://play.rust-lang.org) or on the main
-[Rust website](http://rust-lang.org).
+<p>You can also try out features of Rust with an online compiler at the official
+<a href=""https://play.rust-lang.org"">Rust Playground</a> or on the main
+<a href=""http://rust-lang.org"">Rust website</a>.</p>"
