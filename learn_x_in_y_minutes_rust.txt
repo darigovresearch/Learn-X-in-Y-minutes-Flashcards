@@ -95,170 +95,161 @@ What is an example of a <code>String</code> in rust?|"<pre align=""left"">
 let s: String = ""hello world"".to_string();
 </pre>
 "
-What is a string slice in rust?"|"A string slice – an immutable view into another string. This is basically an immutable pointer and length of a string – it doesn’t actually contain the contents of a string, just a pointer to the beginning and a length of a string buffer, statically allocated or contained in another object (in this case, <code>s</code>). The string slice is like a view <code>&[u8]</code> into <code>Vec<T></code>."
+What is a string slice in rust?"|"A string slice – an immutable view into another string. This is basically an immutable pointer and length of a string – it doesn’t actually contain the contents of a string, just a pointer to the beginning and a length of a string buffer, statically allocated or contained in another object (in this case, <code>s</code>). The string slice is like a view <code>&[u8]</code> into <code>Vec &lt;T&gt;</code>."
 What is an example of a string slice in rust?|"<pre align=""left"">
 let s_slice: &str = &s;
 println!(""{} {}"", s, s_slice); // hello world hello world
 </pre>
 "
-    // Vectors/arrays //
+How do you do fixed-size arrays in rust?|"
+<code>let four_ints: [i32; 4] = [1, 2, 3, 4];</code>
+"
+How do you do dynamic arrays (vector) in rust?|"<pre align=""left"">
+let mut vector: Vec&lt;i32&gt; = vec![1, 2, 3, 4];
+vector.push(5);
+</pre>
 
-    // A fixed-size array
-    let four_ints: [i32; 4] = [1, 2, 3, 4];
+"
+What is a vector/array slice in rust?|An immutable view into a vector or array. This is much like a string slice, but for vectors.
+How do you do a vector/array slice in rust?|<code>let slice: &[i32] = &vector;</code>
+How do you use <code>{:?}</code> to print something debug-style in rust?|"<code>println!(""{:?} {:?}"", vector, slice); // [1, 2, 3, 4, 5] [1, 2, 3, 4, 5]</code>"
+What is a tuple in rust?|A fixed-size set of values of possibly different types.
+How do you do tuples in rust?|"<code>let x: (i32, &str, f64) = (1, ""hello"", 3.4);</code>"
+How do you do use destructuring <code>let</code> in rust?|"<pre align=""left"">
+let (a, b, c) = x;
+println!(""{} {} {}"", a, b, c); // 1 hello 3.4
+</pre>
+"
+How do you index a tuple in rust?|"<code>println!(""{}"", x.1); // hello</code>"
+How do you do <code>Struct</code> types in rust?|"<pre align=""left"">
+// Struct
+struct Point {
+    x: i32,
+    y: i32,
+}
 
-    // A dynamic array (vector)
-    let mut vector: Vec<i32> = vec![1, 2, 3, 4];
-    vector.push(5);
+let origin: Point = Point { x: 0, y: 0 };
+</pre>
+"
+What is a <code>tuple struct</code> in rust?|A struct with unnamed fields
+How do you do tuple structs in rust?|"<pre align=""left"">
+struct Point2(i32, i32);
+let origin2 = Point2(0, 0);
+</pre>
+"
+How do you do basic C-like enums in rust?|"<pre align=""left"">
+enum Direction {
+    Left,
+    Right,
+    Up,
+    Down,
+}
 
-    // A slice – an immutable view into a vector or array
-    // This is much like a string slice, but for vectors
-    let slice: &[i32] = &vector;
+let up = Direction::Up;
+</pre>
+"
+How do you do enums with fields in rust?|"<pre align=""left"">
+enum OptionalI32 {
+    AnI32(i32),
+    Nothing,
+}
 
-    // Use `{:?}` to print something debug-style
-    println!("{:?} {:?}", vector, slice); // [1, 2, 3, 4, 5] [1, 2, 3, 4, 5]
-
-    // Tuples //
-
-    // A tuple is a fixed-size set of values of possibly different types
-    let x: (i32, &str, f64) = (1, "hello", 3.4);
-
-    // Destructuring `let`
-    let (a, b, c) = x;
-    println!("{} {} {}", a, b, c); // 1 hello 3.4
-
-    // Indexing
-    println!("{}", x.1); // hello
-
-    //////////////
-    // 2. Types //
-    //////////////
-
-    // Struct
-    struct Point {
-        x: i32,
-        y: i32,
+let two: OptionalI32 = OptionalI32::AnI32(2);
+let nothing = OptionalI32::Nothing;
+</pre>
+"
+If you want to make something optional in a type in rust what can you use?|If you want to make something optional, the standard library has <code>Option</code>
+How are Generics defined in rust?|This is defined in the standard library as <code>Option</code>. <code>Option</code> is used in place of where a null pointer would normally be used.
+How do you do Generics in rust?|"<pre align=""left"">
+struct Foo&lt;T&gt; { bar: T }
+enum Optional&lt;T&gt; {
+    SomeVal(T),
+    NoVal,
+}
+</pre>
+"
+What do Methods take in rust?|Methods take an explicit <code>self</code> parameter
+How do you do Methods in rust?|"<pre align=""left"">
+impl&lt;T&gt; Foo&lt;T&gt; {
+    // M
+    fn bar(&self) -> &T { // self is borrowed
+        &self.bar
     }
-
-    let origin: Point = Point { x: 0, y: 0 };
-
-    // A struct with unnamed fields, called a ‘tuple struct’
-    struct Point2(i32, i32);
-
-    let origin2 = Point2(0, 0);
-
-    // Basic C-like enum
-    enum Direction {
-        Left,
-        Right,
-        Up,
-        Down,
+    fn bar_mut(&mut self) -> &mut T { // self is mutably borrowed
+        &mut self.bar
     }
-
-    let up = Direction::Up;
-
-    // Enum with fields
-    // If you want to make something optional, the standard
-    // library has `Option`
-    enum OptionalI32 {
-        AnI32(i32),
-        Nothing,
+    fn into_bar(self) -> T { // here self is consumed
+        self.bar
     }
+}
 
-    let two: OptionalI32 = OptionalI32::AnI32(2);
-    let nothing = OptionalI32::Nothing;
+let a_foo = Foo { bar: 1 };
+println!(""{}"", a_foo.bar()); // 1
+</pre>
+"
+What are Traits in rust known as in other languages?|Interfaces or typeclasses
+How do you do traits in rust?|"<pre align=""left"">
+trait Frobnicate&lt;T&gt; {
+    fn frobnicate(self) -> Option&lt;T&gt;;
+}
 
-    // Generics //
-
-    struct Foo<T> { bar: T }
-
-    // This is defined in the standard library as `Option`
-    // `Option` is used in place of where a null pointer
-    // would normally be used.
-    enum Optional<T> {
-        SomeVal(T),
-        NoVal,
+impl&lt;T&gt; Frobnicate&lt;T&gt; for Foo&lt;T&gt; {
+    fn frobnicate(self) -> Option&lt;T&gt; {
+        Some(self.bar)
     }
+}
 
-    // Methods //
-
-    impl<T> Foo<T> {
-        // Methods take an explicit `self` parameter
-        fn bar(&self) -> &T { // self is borrowed
-            &self.bar
-        }
-        fn bar_mut(&mut self) -> &mut T { // self is mutably borrowed
-            &mut self.bar
-        }
-        fn into_bar(self) -> T { // here self is consumed
-            self.bar
-        }
+let another_foo = Foo { bar: 1 };
+println!(""{:?}"", another_foo.frobnicate()); // Some(1)
+</pre>
+"
+How do you do function pointer types in rust?|"<pre align=""left"">
+fn fibonacci(n: u32) -> u32 {
+    match n {
+        0 => 1,
+        1 => 1,
+        _ => fibonacci(n - 1) + fibonacci(n - 2),
     }
+}
 
-    let a_foo = Foo { bar: 1 };
-    println!("{}", a_foo.bar()); // 1
+type FunctionPointer = fn(u32) -> u32;
 
-    // Traits (known as interfaces or typeclasses in other languages) //
+let fib : FunctionPointer = fibonacci;
+println!(""Fib: {}"", fib(4)); // 5
+</pre>
+"
+How do you do basic pattern matching in rust?|"<pre align=""left"">
+let foo = OptionalI32::AnI32(1);
+match foo {
+    OptionalI32::AnI32(n) => println!(""it’s an i32: {}"", n),
+    OptionalI32::Nothing  => println!(""it’s nothing!""),
+}
+</pre>
+"
+How do you do advanced pattern matching in rust?|"<pre align=""left"">
+struct FooBar { x: i32, y: OptionalI32 }
+let bar = FooBar { x: 15, y: OptionalI32::AnI32(32) };
 
-    trait Frobnicate<T> {
-        fn frobnicate(self) -> Option<T>;
-    }
-
-    impl<T> Frobnicate<T> for Foo<T> {
-        fn frobnicate(self) -> Option<T> {
-            Some(self.bar)
-        }
-    }
-
-    let another_foo = Foo { bar: 1 };
-    println!("{:?}", another_foo.frobnicate()); // Some(1)
-
-    // Function pointer types // 
-
-    fn fibonacci(n: u32) -> u32 {
-        match n {
-            0 => 1,
-            1 => 1,
-            _ => fibonacci(n - 1) + fibonacci(n - 2),
-        }
-    }
-
-    type FunctionPointer = fn(u32) -> u32;
-
-    let fib : FunctionPointer = fibonacci;
-    println!("Fib: {}", fib(4)); // 5
-
-    /////////////////////////
-    // 3. Pattern matching //
-    /////////////////////////
-
-    let foo = OptionalI32::AnI32(1);
-    match foo {
-        OptionalI32::AnI32(n) => println!("it’s an i32: {}", n),
-        OptionalI32::Nothing  => println!("it’s nothing!"),
-    }
-
-    // Advanced pattern matching
-    struct FooBar { x: i32, y: OptionalI32 }
-    let bar = FooBar { x: 15, y: OptionalI32::AnI32(32) };
-
-    match bar {
-        FooBar { x: 0, y: OptionalI32::AnI32(0) } =>
-            println!("The numbers are zero!"),
-        FooBar { x: n, y: OptionalI32::AnI32(m) } if n == m =>
-            println!("The numbers are the same"),
-        FooBar { x: n, y: OptionalI32::AnI32(m) } =>
-            println!("Different numbers: {} {}", n, m),
-        FooBar { x: _, y: OptionalI32::Nothing } =>
-            println!("The second number is Nothing!"),
-    }
-How do you for loops/iteration with arrays in rust?|"<pre align=""left"">
+match bar {
+    FooBar { x: 0, y: OptionalI32::AnI32(0) } =>
+        println!(""The numbers are zero!""),
+    FooBar { x: n, y: OptionalI32::AnI32(m) } if n == m =>
+        println!(""The numbers are the same""),
+    FooBar { x: n, y: OptionalI32::AnI32(m) } =>
+        println!(""Different numbers: {} {}"", n, m),
+    FooBar { x: _, y: OptionalI32::Nothing } =>
+        println!(""The second number is Nothing!""),
+}
+</pre>
+"
+How do you do for loops/iteration with arrays in rust?|"<pre align=""left"">
 let array = [1, 2, 3];
 for i in array {
     println!(""{}"", i);
 }
 </pre>
 "
-How do you for loops/iteration with ranges in rust?|"<pre align=""left"">
+How do you do for loops/iteration with ranges in rust?|"<pre align=""left"">
 for i in 0u32..10 {
     print!(""{} "", i);
 }
@@ -266,7 +257,7 @@ println!("""");
 // prints `0 1 2 3 4 5 6 7 8 9 `
 </pre>
 "
-How do you if statments in rust?|"<pre align=""left"">
+How do you do if statments in rust?|"<pre align=""left"">
 if 1 == 1 {
     println!(""Maths is working!"");
 } else {
@@ -274,7 +265,7 @@ if 1 == 1 {
 }
 </pre>
 "
-How do you if statments as an expression in rust?|"<pre align=""left"">
+How do you do if statments as an expression in rust?|"<pre align=""left"">
 let value = if true {
     ""good""
 } else {
@@ -282,7 +273,7 @@ let value = if true {
 };
 </pre>
 "
-How do you while loops in rust?|"<pre align=""left"">
+How do you do while loops in rust?|"<pre align=""left"">
 while 1 == 1 {
     println!(""The universe is operating normally."");
     // break statement gets out of the while loop.
@@ -291,7 +282,7 @@ while 1 == 1 {
 }
 </pre>
 "
-How do you infinite loops in rust?|"<pre align=""left"">
+How do you do infinite loops in rust?|"<pre align=""left"">
 loop {
     println!(""Hello!"");
     // break statement gets out of the loop
@@ -299,48 +290,44 @@ loop {
 }
 </pre>
 "
-    /////////////////////////////////
-    // 5. Memory safety & pointers //
-    /////////////////////////////////
+What should you know about Owned pointers in rust?|"Owned pointer – only one thing can ‘own’ this pointer at a time. This means that when the <code>Box</code> leaves its scope, it will be automatically deallocated safely.
+<pre align=""left"">
+let mut mine: Box<i32> = Box::new(3);
+*mine = 5; // dereference
+// Here, `now_its_mine` takes ownership of `mine`. In other words, `mine` is moved.
+let mut now_its_mine = mine;
+*now_its_mine += 2;
 
-    // Owned pointer – only one thing can ‘own’ this pointer at a time
-    // This means that when the `Box` leaves its scope, it will be automatically deallocated safely.
-    let mut mine: Box<i32> = Box::new(3);
-    *mine = 5; // dereference
-    // Here, `now_its_mine` takes ownership of `mine`. In other words, `mine` is moved.
-    let mut now_its_mine = mine;
-    *now_its_mine += 2;
+println!(""{}"", now_its_mine); // 7
+// println!(""{}"", mine); // this would not compile because `now_its_mine` now owns the pointer
+</pre>
+"
+What should you know about References in rust?|"Reference – an immutable pointer that refers to other data. When a reference is taken to a value, we say that the value has been ‘borrowed’. While a value is borrowed immutably, it cannot be mutated or moved. A borrow is active until the last use of the borrowing variable.
+<pre align=""left"">
+let mut var = 4;
+var = 3;
+let ref_var: &i32 = &var;
 
-    println!("{}", now_its_mine); // 7
-    // println!("{}", mine); // this would not compile because `now_its_mine` now owns the pointer
+println!(""{}"", var); // Unlike `mine`, `var` can still be used
+println!(""{}"", *ref_var);
+// var = 5; // this would not compile because `var` is borrowed
+// *ref_var = 6; // this would not either, because `ref_var` is an immutable reference
+ref_var; // no-op, but counts as a use and keeps the borrow active
+var = 2; // ref_var is no longer used after the line above, so the borrow has ended
+</pre>
+"
+What should you know about Mutable References in rust?|"While a value is mutably borrowed, it cannot be accessed at all.
+<pre align=""left"">
+let mut var2 = 4;
+let ref_var2: &mut i32 = &mut var2;
+*ref_var2 += 2;         // '*' is used to point to the mutably borrowed var2
 
-    // Reference – an immutable pointer that refers to other data
-    // When a reference is taken to a value, we say that the value has been ‘borrowed’.
-    // While a value is borrowed immutably, it cannot be mutated or moved.
-    // A borrow is active until the last use of the borrowing variable.
-    let mut var = 4;
-    var = 3;
-    let ref_var: &i32 = &var;
-
-    println!("{}", var); // Unlike `mine`, `var` can still be used
-    println!("{}", *ref_var);
-    // var = 5; // this would not compile because `var` is borrowed
-    // *ref_var = 6; // this would not either, because `ref_var` is an immutable reference
-    ref_var; // no-op, but counts as a use and keeps the borrow active
-    var = 2; // ref_var is no longer used after the line above, so the borrow has ended
-
-    // Mutable reference
-    // While a value is mutably borrowed, it cannot be accessed at all.
-    let mut var2 = 4;
-    let ref_var2: &mut i32 = &mut var2;
-    *ref_var2 += 2;         // '*' is used to point to the mutably borrowed var2
-
-    println!("{}", *ref_var2); // 6 , // var2 would not compile.
-    // ref_var2 is of type &mut i32, so stores a reference to an i32, not the value.
-    // var2 = 2; // this would not compile because `var2` is borrowed.
-    ref_var2; // no-op, but counts as a use and keeps the borrow active until here
-}
-```
+println!(""{}"", *ref_var2); // 6 , // var2 would not compile.
+// ref_var2 is of type &mut i32, so stores a reference to an i32, not the value.
+// var2 = 2; // this would not compile because `var2` is borrowed.
+ref_var2; // no-op, but counts as a use and keeps the borrow active until here
+</pre>
+"
 What is some further reading for rust?|"
 <p>For a deeper-yet-still-fast explanation into Rust and its symbols/keywords, the
 <a href=""https://fasterthanli.me/articles/a-half-hour-to-learn-rust"">half-hour to learn Rust</a>
