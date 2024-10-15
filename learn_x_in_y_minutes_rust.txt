@@ -1,25 +1,25 @@
-What should you know about rust?|"Rust is a programming language developed by Mozilla Research.
+What should you know about rust? (Learn X in Y minutes Rust)|"Rust is a programming language developed by Mozilla Research.
 Rust combines low-level control over performance with high-level convenience and
 safety guarantees.
 "
-How does rust achieve its goals?|"It achieves these goals without requiring a garbage collector or runtime, making
+How does rust achieve its goals? (Learn X in Y minutes Rust)|"It achieves these goals without requiring a garbage collector or runtime, making
 it possible to use Rust libraries as a ""drop-in replacement"" for C.
 "
-What should you know about the 0.1 release of rust?|"Rust’s first release, 0.1, occurred in January 2012, and for 3 years development
+What should you know about the 0.1 release of rust? (Learn X in Y minutes Rust)|"Rust’s first release, 0.1, occurred in January 2012, and for 3 years development
 moved so quickly that until recently the use of stable releases was discouraged
 and instead the general advice was to use nightly builds.
 "
-What should you know about the 1.0 release of rust?|"On May 15th 2015, Rust 1.0 was released with a complete guarantee of backward
+What should you know about the 1.0 release of rust? (Learn X in Y minutes Rust)|"On May 15th 2015, Rust 1.0 was released with a complete guarantee of backward
 compatibility. Improvements to compile times and other aspects of the compiler are
 currently available in the nightly builds. Rust has adopted a train-based release
 model with regular releases every six weeks. Rust 1.1 beta was made available at
 the same time of the release of Rust 1.0.
 "
-What should you know about rust with respect to functional concepts?|"Although Rust is a relatively low-level language, it has some functional
+What should you know about rust with respect to functional concepts? (Learn X in Y minutes Rust)|"Although Rust is a relatively low-level language, it has some functional
 concepts that are generally found in higher-level languages. This makes
 Rust not only fast, but also easy and efficient to code in.
 "
-What do comments look like in rust?"|"<pre align=""left"">
+What do comments look like in rust? (Learn X in Y minutes Rust)|"<pre align=""left"">
 // This is a comment. Line comments look like this...
 // and extend multiple lines like this.
 
@@ -27,9 +27,9 @@ What do comments look like in rust?"|"<pre align=""left"">
   /* can be nested. */ */
 </pre>
 "
-Can block comments be nested in rust?|Yes
+Can block comments be nested in rust? (Learn X in Y minutes Rust)|Yes
 
-What do documentation comments look like in rust?|"<pre align=""left"">
+What do documentation comments look like in rust? (Learn X in Y minutes Rust)|"<pre align=""left"">
 /// Documentation comments look like this and support markdown notation.
 /// # Examples
 ///
@@ -38,8 +38,8 @@ What do documentation comments look like in rust?|"<pre align=""left"">
 /// ```
 </pre>
 "
-What do documentation comments support markdown notation?|Yes
-How do you do functions in rust?|"<pre align=""left"">
+What do documentation comments support markdown notation? (Learn X in Y minutes Rust)|Yes
+How do you do functions in rust? (Learn X in Y minutes Rust)|"<pre align=""left"">
 #[allow(dead_code)]
 fn add2(x: i32, y: i32) -> i32 {
     // Implicit return (no semicolon)
@@ -47,8 +47,8 @@ fn add2(x: i32, y: i32) -> i32 {
 }
 </pre>
 "
-What does i32 mean in rust?|<code>i32</code> is the type for 32-bit signed integers
-How do you do a main function in rust?|"<pre align=""left"">
+What does i32 mean in rust? (Learn X in Y minutes Rust)|<code>i32</code> is the type for 32-bit signed integers
+How do you do a main function in rust? (Learn X in Y minutes Rust)|"<pre align=""left"">
 #[allow(unused_variables)]
 #[allow(unused_assignments)]
 #[allow(dead_code)]
@@ -57,71 +57,71 @@ fn main() {
 }
 </pre>
 "
-How do you do Immutable bindings in rust?|"<pre align=""left"">
+How do you do Immutable bindings in rust? (Learn X in Y minutes Rust)|"<pre align=""left"">
 let x: i32 = 1;
 </pre>
 "
-How do you do Integer/float suffixes in rust?|"<pre align=""left"">
+How do you do Integer/float suffixes in rust? (Learn X in Y minutes Rust)|"<pre align=""left"">
 let y: i32 = 13i32;
 let f: f64 = 1.3f64;
 </pre>
 "
-What should you know about type inferences in rust?|Most of the time, the Rust compiler can infer what type a variable is, so you don’t have to write an explicit type annotation. Throughout this tutorial, types are explicitly annotated in many places, but only for demonstrative purposes. Type inference can handle this for you most of the time.
-What is an example of type inferences in rust?|"<pre align=""left"">
+What should you know about type inferences in rust? (Learn X in Y minutes Rust)|Most of the time, the Rust compiler can infer what type a variable is, so you don’t have to write an explicit type annotation. Throughout this tutorial, types are explicitly annotated in many places, but only for demonstrative purposes. Type inference can handle this for you most of the time.
+What is an example of type inferences in rust? (Learn X in Y minutes Rust)|"<pre align=""left"">
 let implicit_x = 1;
 let implicit_f = 1.3;
 </pre>
 "
-How do you do arithmetic in rust?|"<pre align=""left"">
+How do you do arithmetic in rust? (Learn X in Y minutes Rust)|"<pre align=""left"">
 let sum = x + y + 13;
 </pre>
 "
-How do you do mutable variables in rust?|"<pre align=""left"">
+How do you do mutable variables in rust? (Learn X in Y minutes Rust)|"<pre align=""left"">
 let mut mutable = 1;
 mutable = 4;
 mutable += 2;
 </pre>
 "
-How do you do string literals in rust?|"<pre align=""left"">
+How do you do string literals in rust? (Learn X in Y minutes Rust)|"<pre align=""left"">
 let x: &str = ""hello world!"";
 </pre>
 "
-How do you do printing in rust?|"<pre align=""left"">
+How do you do printing in rust? (Learn X in Y minutes Rust)|"<pre align=""left"">
 println!(""{} {}"", f, x); // 1.3 hello world
 </pre>
 "
-"What is a <code>String</code> in rust?"|"A `String` – a heap-allocated string. Stored as a <code>Vec<u8></code> and always holds a valid UTF-8 sequence, which is not null terminated."
-What is an example of a <code>String</code> in rust?|"<pre align=""left"">
+"What is a <code>String</code> in rust? (Learn X in Y minutes Rust)"|"A `String` – a heap-allocated string. Stored as a <code>Vec<u8></code> and always holds a valid UTF-8 sequence, which is not null terminated."
+What is an example of a <code>String</code> in rust? (Learn X in Y minutes Rust)|"<pre align=""left"">
 let s: String = ""hello world"".to_string();
 </pre>
 "
-What is a string slice in rust?"|"A string slice – an immutable view into another string. This is basically an immutable pointer and length of a string – it doesn’t actually contain the contents of a string, just a pointer to the beginning and a length of a string buffer, statically allocated or contained in another object (in this case, <code>s</code>). The string slice is like a view <code>&[u8]</code> into <code>Vec &lt;T&gt;</code>."
-What is an example of a string slice in rust?|"<pre align=""left"">
+What is a string slice in rust? (Learn X in Y minutes Rust)|"A string slice – an immutable view into another string. This is basically an immutable pointer and length of a string – it doesn’t actually contain the contents of a string, just a pointer to the beginning and a length of a string buffer, statically allocated or contained in another object (in this case, <code>s</code>). The string slice is like a view <code>&[u8]</code> into <code>Vec &lt;T&gt;</code>."
+What is an example of a string slice in rust? (Learn X in Y minutes Rust)|"<pre align=""left"">
 let s_slice: &str = &s;
 println!(""{} {}"", s, s_slice); // hello world hello world
 </pre>
 "
-How do you do fixed-size arrays in rust?|"
+How do you do fixed-size arrays in rust? (Learn X in Y minutes Rust)|"
 <code>let four_ints: [i32; 4] = [1, 2, 3, 4];</code>
 "
-How do you do dynamic arrays (vector) in rust?|"<pre align=""left"">
+How do you do dynamic arrays (vector) in rust? (Learn X in Y minutes Rust)|"<pre align=""left"">
 let mut vector: Vec&lt;i32&gt; = vec![1, 2, 3, 4];
 vector.push(5);
 </pre>
 
 "
-What is a vector/array slice in rust?|An immutable view into a vector or array. This is much like a string slice, but for vectors.
-How do you do a vector/array slice in rust?|<code>let slice: &[i32] = &vector;</code>
-How do you use <code>{:?}</code> to print something debug-style in rust?|"<code>println!(""{:?} {:?}"", vector, slice); // [1, 2, 3, 4, 5] [1, 2, 3, 4, 5]</code>"
-What is a tuple in rust?|A fixed-size set of values of possibly different types.
-How do you do tuples in rust?|"<code>let x: (i32, &str, f64) = (1, ""hello"", 3.4);</code>"
-How do you do use destructuring <code>let</code> in rust?|"<pre align=""left"">
+What is a vector/array slice in rust? (Learn X in Y minutes Rust)|An immutable view into a vector or array. This is much like a string slice, but for vectors.
+How do you do a vector/array slice in rust? (Learn X in Y minutes Rust)|<code>let slice: &[i32] = &vector;</code>
+How do you use <code>{:?}</code> to print something debug-style in rust? (Learn X in Y minutes Rust)|"<code>println!(""{:?} {:?}"", vector, slice); // [1, 2, 3, 4, 5] [1, 2, 3, 4, 5]</code>"
+What is a tuple in rust? (Learn X in Y minutes Rust)|A fixed-size set of values of possibly different types.
+How do you do tuples in rust? (Learn X in Y minutes Rust)|"<code>let x: (i32, &str, f64) = (1, ""hello"", 3.4);</code>"
+How do you do use destructuring <code>let</code> in rust? (Learn X in Y minutes Rust)|"<pre align=""left"">
 let (a, b, c) = x;
 println!(""{} {} {}"", a, b, c); // 1 hello 3.4
 </pre>
 "
-How do you index a tuple in rust?|"<code>println!(""{}"", x.1); // hello</code>"
-How do you do <code>Struct</code> types in rust?|"<pre align=""left"">
+How do you index a tuple in rust? (Learn X in Y minutes Rust)|"<code>println!(""{}"", x.1); // hello</code>"
+How do you do <code>Struct</code> types in rust? (Learn X in Y minutes Rust)|"<pre align=""left"">
 // Struct
 struct Point {
     x: i32,
@@ -131,13 +131,13 @@ struct Point {
 let origin: Point = Point { x: 0, y: 0 };
 </pre>
 "
-What is a <code>tuple struct</code> in rust?|A struct with unnamed fields
-How do you do tuple structs in rust?|"<pre align=""left"">
+What is a <code>tuple struct</code> in rust? (Learn X in Y minutes Rust)|A struct with unnamed fields
+How do you do tuple structs in rust? (Learn X in Y minutes Rust)|"<pre align=""left"">
 struct Point2(i32, i32);
 let origin2 = Point2(0, 0);
 </pre>
 "
-How do you do basic C-like enums in rust?|"<pre align=""left"">
+How do you do basic C-like enums in rust? (Learn X in Y minutes Rust)|"<pre align=""left"">
 enum Direction {
     Left,
     Right,
@@ -148,7 +148,7 @@ enum Direction {
 let up = Direction::Up;
 </pre>
 "
-How do you do enums with fields in rust?|"<pre align=""left"">
+How do you do enums with fields in rust? (Learn X in Y minutes Rust)|"<pre align=""left"">
 enum OptionalI32 {
     AnI32(i32),
     Nothing,
@@ -158,9 +158,9 @@ let two: OptionalI32 = OptionalI32::AnI32(2);
 let nothing = OptionalI32::Nothing;
 </pre>
 "
-If you want to make something optional in a type in rust what can you use?|If you want to make something optional, the standard library has <code>Option</code>
-How are Generics defined in rust?|This is defined in the standard library as <code>Option</code>. <code>Option</code> is used in place of where a null pointer would normally be used.
-How do you do Generics in rust?|"<pre align=""left"">
+If you want to make something optional in a type in rust what can you use? (Learn X in Y minutes Rust)|If you want to make something optional, the standard library has <code>Option</code>
+How are Generics defined in rust? (Learn X in Y minutes Rust)|This is defined in the standard library as <code>Option</code>. <code>Option</code> is used in place of where a null pointer would normally be used.
+How do you do Generics in rust? (Learn X in Y minutes Rust)|"<pre align=""left"">
 struct Foo&lt;T&gt; { bar: T }
 enum Optional&lt;T&gt; {
     SomeVal(T),
@@ -168,8 +168,8 @@ enum Optional&lt;T&gt; {
 }
 </pre>
 "
-What do Methods take in rust?|Methods take an explicit <code>self</code> parameter
-How do you do Methods in rust?|"<pre align=""left"">
+What do Methods take in rust? (Learn X in Y minutes Rust)|Methods take an explicit <code>self</code> parameter
+How do you do Methods in rust? (Learn X in Y minutes Rust)|"<pre align=""left"">
 impl&lt;T&gt; Foo&lt;T&gt; {
     // M
     fn bar(&self) -> &T { // self is borrowed
@@ -187,8 +187,8 @@ let a_foo = Foo { bar: 1 };
 println!(""{}"", a_foo.bar()); // 1
 </pre>
 "
-What are Traits in rust known as in other languages?|Interfaces or typeclasses
-How do you do traits in rust?|"<pre align=""left"">
+What are Traits in rust known as in other languages? (Learn X in Y minutes Rust)|Interfaces or typeclasses
+How do you do traits in rust? (Learn X in Y minutes Rust)|"<pre align=""left"">
 trait Frobnicate&lt;T&gt; {
     fn frobnicate(self) -> Option&lt;T&gt;;
 }
@@ -203,7 +203,7 @@ let another_foo = Foo { bar: 1 };
 println!(""{:?}"", another_foo.frobnicate()); // Some(1)
 </pre>
 "
-How do you do function pointer types in rust?|"<pre align=""left"">
+How do you do function pointer types in rust? (Learn X in Y minutes Rust)|"<pre align=""left"">
 fn fibonacci(n: u32) -> u32 {
     match n {
         0 => 1,
@@ -218,7 +218,7 @@ let fib : FunctionPointer = fibonacci;
 println!(""Fib: {}"", fib(4)); // 5
 </pre>
 "
-How do you do basic pattern matching in rust?|"<pre align=""left"">
+How do you do basic pattern matching in rust? (Learn X in Y minutes Rust)|"<pre align=""left"">
 let foo = OptionalI32::AnI32(1);
 match foo {
     OptionalI32::AnI32(n) => println!(""it’s an i32: {}"", n),
@@ -226,7 +226,7 @@ match foo {
 }
 </pre>
 "
-How do you do advanced pattern matching in rust?|"<pre align=""left"">
+How do you do advanced pattern matching in rust? (Learn X in Y minutes Rust)|"<pre align=""left"">
 struct FooBar { x: i32, y: OptionalI32 }
 let bar = FooBar { x: 15, y: OptionalI32::AnI32(32) };
 
@@ -242,14 +242,14 @@ match bar {
 }
 </pre>
 "
-How do you do for loops/iteration with arrays in rust?|"<pre align=""left"">
+How do you do for loops/iteration with arrays in rust? (Learn X in Y minutes Rust)|"<pre align=""left"">
 let array = [1, 2, 3];
 for i in array {
     println!(""{}"", i);
 }
 </pre>
 "
-How do you do for loops/iteration with ranges in rust?|"<pre align=""left"">
+How do you do for loops/iteration with ranges in rust? (Learn X in Y minutes Rust)|"<pre align=""left"">
 for i in 0u32..10 {
     print!(""{} "", i);
 }
@@ -257,7 +257,7 @@ println!("""");
 // prints `0 1 2 3 4 5 6 7 8 9 `
 </pre>
 "
-How do you do if statments in rust?|"<pre align=""left"">
+How do you do if statments in rust? (Learn X in Y minutes Rust)|"<pre align=""left"">
 if 1 == 1 {
     println!(""Maths is working!"");
 } else {
@@ -265,7 +265,7 @@ if 1 == 1 {
 }
 </pre>
 "
-How do you do if statments as an expression in rust?|"<pre align=""left"">
+How do you do if statments as an expression in rust? (Learn X in Y minutes Rust)|"<pre align=""left"">
 let value = if true {
     ""good""
 } else {
@@ -273,7 +273,7 @@ let value = if true {
 };
 </pre>
 "
-How do you do while loops in rust?|"<pre align=""left"">
+How do you do while loops in rust? (Learn X in Y minutes Rust)|"<pre align=""left"">
 while 1 == 1 {
     println!(""The universe is operating normally."");
     // break statement gets out of the while loop.
@@ -282,7 +282,7 @@ while 1 == 1 {
 }
 </pre>
 "
-How do you do infinite loops in rust?|"<pre align=""left"">
+How do you do infinite loops in rust? (Learn X in Y minutes Rust)|"<pre align=""left"">
 loop {
     println!(""Hello!"");
     // break statement gets out of the loop
@@ -290,7 +290,7 @@ loop {
 }
 </pre>
 "
-What should you know about Owned pointers in rust?|"Owned pointer – only one thing can ‘own’ this pointer at a time. This means that when the <code>Box</code> leaves its scope, it will be automatically deallocated safely.
+What should you know about Owned pointers in rust? (Learn X in Y minutes Rust)|"Owned pointer – only one thing can ‘own’ this pointer at a time. This means that when the <code>Box</code> leaves its scope, it will be automatically deallocated safely.
 <pre align=""left"">
 let mut mine: Box<i32> = Box::new(3);
 *mine = 5; // dereference
@@ -302,7 +302,7 @@ println!(""{}"", now_its_mine); // 7
 // println!(""{}"", mine); // this would not compile because `now_its_mine` now owns the pointer
 </pre>
 "
-What should you know about References in rust?|"Reference – an immutable pointer that refers to other data. When a reference is taken to a value, we say that the value has been ‘borrowed’. While a value is borrowed immutably, it cannot be mutated or moved. A borrow is active until the last use of the borrowing variable.
+What should you know about References in rust? (Learn X in Y minutes Rust)|"Reference – an immutable pointer that refers to other data. When a reference is taken to a value, we say that the value has been ‘borrowed’. While a value is borrowed immutably, it cannot be mutated or moved. A borrow is active until the last use of the borrowing variable.
 <pre align=""left"">
 let mut var = 4;
 var = 3;
@@ -316,7 +316,7 @@ ref_var; // no-op, but counts as a use and keeps the borrow active
 var = 2; // ref_var is no longer used after the line above, so the borrow has ended
 </pre>
 "
-What should you know about Mutable References in rust?|"While a value is mutably borrowed, it cannot be accessed at all.
+What should you know about Mutable References in rust? (Learn X in Y minutes Rust)|"While a value is mutably borrowed, it cannot be accessed at all.
 <pre align=""left"">
 let mut var2 = 4;
 let ref_var2: &mut i32 = &mut var2;
@@ -328,7 +328,7 @@ println!(""{}"", *ref_var2); // 6 , // var2 would not compile.
 ref_var2; // no-op, but counts as a use and keeps the borrow active until here
 </pre>
 "
-What is some further reading for rust?|"
+What is some further reading for rust? (Learn X in Y minutes Rust)|"
 <p>For a deeper-yet-still-fast explanation into Rust and its symbols/keywords, the
 <a href=""https://fasterthanli.me/articles/a-half-hour-to-learn-rust"">half-hour to learn Rust</a>
 article by Fasterthanlime explains (almost) everything in a clear and concise way!</p>
