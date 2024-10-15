@@ -1,61 +1,33 @@
----
-language: markdown
-contributors:
-    - ["Dan Turkel", "http://danturkel.com/"]
-    - ["Jacob Ward", "http://github.com/JacobCWard/"]
-    - ["Tomáš Hartman", "https://github.com/tomas-hartman"]
-filename: markdown.md
----
-
-
-Markdown was created by John Gruber in 2004. It's meant to be an easy to read
-and write syntax which converts easily to HTML (and now many other formats as
-well).
-
-Markdown also varies in implementation from one parser to a next. This
-guide will attempt to clarify when features are universal or when they are
-specific to a certain parser.
-
-## HTML Elements
-
-Markdown is a superset of HTML, so any HTML file is valid Markdown.
-
-```md
-<!--This means we can use HTML elements in Markdown, such as the comment
+What is Markdown?¬Markdown was created by John Gruber in 2004. It's meant to be an easy to read and write syntax which converts easily to HTML (and now many other formats as well).
+How does Markdown vary?¬Markdown also varies in implementation from one parser to a next. This guide will attempt to clarify when features are universal or when they are specific to a certain parser.
+Does Markown support HTML?¬Markdown is a superset of HTML, so any HTML file is valid Markdown.
+What are some examples of HTM support in Markdown?¬"<pre align=""left"">
+&lt;!--This means we can use HTML elements in Markdown, such as the comment
 element, and they won't be affected by a markdown parser. However, if you
 create an HTML element in your markdown file, you cannot use markdown syntax
-within that element's contents.-->
-```
-
-## Headings
-
-You can create HTML elements `<h1>` through `<h6>` easily by prepending the
-text you want to be in that element by a number of hashes (#).
-
-```md
-# This is an <h1>
-## This is an <h2>
-### This is an <h3>
-#### This is an <h4>
-##### This is an <h5>
-###### This is an <h6>
-```
-
-Markdown also provides us with two alternative ways of indicating h1 and h2.
-
-```md
+within that element's contents.--&gt;
+</pre>
+"
+How do you do headings in Markdown?¬"You can create HTML elements <code>&lt;h&gt;</code> through <code>&lt;h&gt;</code> easily by prepending the text you want to be in that element by a number of hashes (#).
+<pre align=""left"">
+&num; This is an &lt;h1&gt;
+&num;&num; This is an &lt;h2&gt;
+&num;&num;&num; This is an &lt;h3&gt;
+&num;&num;&num;&num; This is an &lt;h4&gt;
+&num;&num;&num;&num;&num; This is an &lt;h5&gt;
+&num;&num;&num;&num;&num;&num; This is an &lt;h6&gt;
+</pre>
+"
+What are the two alternative ways of indicating h1 and h2 in Markdown?¬"Markdown also provides us with two alternative ways of indicating h1 and h2.
+<pre align=""left"">
 This is an h1
 =============
 
 This is an h2
 -------------
-```
-
-## Simple text styles
-
-Text can be easily styled as italic or bold using markdown.
-
-```md
+</pre>
+"
+How can you do Italics and Bold in Markdown?¬"<pre align=""left"">
 *This text is in italics.*
 _And so is this text._
 
@@ -65,42 +37,30 @@ __And so is this text.__
 ***This text is in both.***
 **_As is this!_**
 *__And this!__*
-```
-
-In GitHub Flavored Markdown, which is used to render markdown files on
-GitHub, we also have strikethrough:
-
-```md
-~~This text is rendered with strikethrough.~~
-```
-
-## Paragraphs
-
-Paragraphs are a one or multiple adjacent lines of text separated by one or
-multiple blank lines.
-
-```md
+</pre>
+"
+How do you do strikethroughs in GitHub Flavored Markdown?¬<code>~~This text is rendered with strikethrough.~~</code>
+How do you do paragraphs in Markdown?¬"Paragraphs are a one or multiple adjacent lines of text separated by one or multiple blank lines.<pre align=""left"">
 This is a paragraph. I'm typing in a paragraph isn't this fun?
 
 Now I'm in paragraph 2.
 I'm still in paragraph 2 too!
 
 
-I'm in paragraph three!
-```
+I'm in paragraph three! 
+</pre>
+"
+How do you do ____ in Markdown?¬"Should you ever want to insert an HTML <code>&lt;br /&gt;</code> tag, you can end a paragraph with two or more spaces and then begin a new paragraph.
 
-Should you ever want to insert an HTML `<br />` tag, you can end a paragraph
-with two or more spaces and then begin a new paragraph.
-
-```md
+<pre align=""left"">
 I end with two spaces (highlight me to see them).
 
-There's a <br /> above me!
-```
+There's a &lt;br /&gt; above me!
+</pre>
+"
+How do you do blockquotes in Markdown?¬"Block quotes are easy and done with the > character.
 
-Block quotes are easy and done with the > character.
-
-```md
+<pre align=""left"">
 > This is a block quote. You can either
 > manually wrap your lines and put a `>` before every line or you can let your lines get really long and wrap on their own.
 > It doesn't make a difference so long as they start with a `>`.
@@ -108,14 +68,11 @@ Block quotes are easy and done with the > character.
 > You can also use more than one level
 >> of indentation?
 > How neat is that?
+</pre>
+"
+How do you do unordered lists in Markdown?¬"Unordered lists can be made using asterisks, pluses, or hyphens.
 
-```
-
-## Lists
-
-Unordered lists can be made using asterisks, pluses, or hyphens.
-
-```md
+<pre align=""left"">
 * Item
 * Item
 * Another item
@@ -131,79 +88,73 @@ or
 - Item
 - Item
 - One last item
-```
+</pre>
+"
+How do you do ordered lists in Markdown?¬"Ordered lists are done with a number followed by a period.
 
-Ordered lists are done with a number followed by a period.
-
-```md
+<pre align=""left"">
 1. Item one
 2. Item two
 3. Item three
-```
+</pre>
 
-You don't even have to label the items correctly and Markdown will still
-render the numbers in order, but this may not be a good idea.
+You don't even have to label the items correctly and Markdown will still render the numbers in order, but this may not be a good idea.
 
-```md
+<pre align=""left"">
 1. Item one
 1. Item two
 1. Item three
-```
+</pre>
 
 (This renders the same as the example above.)
-
-You can also use sublists.
-
-```md
+"
+How do you do sublists in Markdown?¬"<pre align=""left"">
 1. Item one
 2. Item two
 3. Item three
     * Sub-item
     * Sub-item
 4. Item four
-```
-
-There are even task lists. This creates HTML checkboxes.
-
-```md
-Boxes below without the 'x' are unchecked HTML checkboxes.
+</pre>
+"
+How do you do task lists in Markdown?¬"Boxes below without the 'x' are unchecked HTML checkboxes.<pre align=""left"">
 - [ ] First task to complete.
 - [ ] Second task that needs done
 This checkbox below will be a checked HTML checkbox.
-- [x] This task has been completed
-```
-
+- [x] This task has been completed  
+</pre>
+"
 ## Code blocks
 
 You can indicate a code block (which uses the `<code>` element) by indenting
 a line with four spaces or a tab.
 
-```md
+<pre align=""left"">
     This is code
     So is this
-```
+</pre>
 
 You can also re-tab (or add an additional four spaces) for indentation
 inside your code.
 
-```md
+<pre align=""left"">
     my_array.each do |item|
       puts item
     end
-```
+</pre>
 
 Inline code can be created using the backtick character `` ` ``.
 
-```md
+<pre align=""left"">
 John didn't even know what the `go_to()` function did!
-```
+</pre>
 
 In GitHub Flavored Markdown, you can use a special syntax for code.
 
 ````md
 ```ruby
 def foobar
-  puts "Hello world!"
+  puts ""Hello world!""
 end
 ```
 ````
@@ -216,55 +167,55 @@ highlighting of the language you specify after the opening <code>```</code>.
 Horizontal rules (`<hr/>`) are easily added with three or more asterisks or
 hyphens, with or without spaces.
 
-```md
+<pre align=""left"">
 ***
 ---
 - - -
 ****************
-```
+</pre>
 
 ## Links
 
 One of the best things about markdown is how easy it is to make links. Put
 the text to display in hard brackets [] followed by the url in parentheses ()
 
-```md
+<pre align=""left"">
 [Click me!](http://test.com/)
-```
+</pre>
 
 You can also add a link title using quotes inside the parentheses.
 
-```md
-[Click me!](http://test.com/ "Link to Test.com")
-```
+<pre align=""left"">
+[Click me!](http://test.com/ ""Link to Test.com"")
+</pre>
 
 Relative paths work too.
 
-```md
+<pre align=""left"">
 [Go to music](/music/).
-```
+</pre>
 
 Markdown also supports reference style links.
 
-```md
+<pre align=""left"">
 [Click this link][link1] for more info about it!
 [Also check out this link][foobar] if you want to.
 
-[link1]: http://test.com/ "Cool!"
-[foobar]: http://foobar.biz/ "Alright!"
-```
+[link1]: http://test.com/ ""Cool!""
+[foobar]: http://foobar.biz/ ""Alright!""
+</pre>
 
 The title can also be in single quotes or in parentheses, or omitted
 entirely. The references can be anywhere in your document and the reference IDs
 can be anything so long as they are unique.
 
-There is also "implicit naming" which lets you use the link text as the id.
+There is also ""implicit naming"" which lets you use the link text as the id.
 
-```md
+<pre align=""left"">
 [This][] is a link.
 
 [This]: http://thisisalink.com/
-```
+</pre>
 
 But it's not that commonly used.
 
@@ -277,12 +228,12 @@ heading have multiple words, they will be connected with a hyphen (`-`), that
 also replaces some special characters. (Some other special characters are
 omitted though.)
 
-```md
+<pre align=""left"">
 - [Heading](#heading)
 - [Another heading](#another-heading)
 - [Chapter](#chapter)
   - [Subchapter <h3 />](#subchapter-h3-)
-```
+</pre>
 
 Nonetheless, this is a feature that might not be working in all Markdown
 implementations the same way.
@@ -291,69 +242,69 @@ implementations the same way.
 
 Images are done the same way as links but with an exclamation point in front!
 
-```md
-![This is the alt-attribute for my image](http://imgur.com/myimage.jpg "An optional title")
-```
+<pre align=""left"">
+![This is the alt-attribute for my image](http://imgur.com/myimage.jpg ""An optional title"")
+</pre>
 
 And reference style works as expected.
 
-```md
+<pre align=""left"">
 ![This is the alt-attribute.][myimage]
 
-[myimage]: relative/urls/cool/image.jpg "if you need a title, it's here"
-```
+[myimage]: relative/urls/cool/image.jpg ""if you need a title, it's here""
+</pre>
 
 ## Miscellany
 
 ### Auto-links
 
-```md
+<pre align=""left"">
 <http://testwebsite.com/> is equivalent to
 [http://testwebsite.com/](http://testwebsite.com/)
-```
+</pre>
 
 ### Auto-links for emails
 
-```md
+<pre align=""left"">
 <foo@bar.com>
-```
+</pre>
 
 ### Escaping characters
 
-```md
+<pre align=""left"">
 I want to type *this text surrounded by asterisks* but I don't want it to be
 in italics, so I do this: \*this text surrounded by asterisks\*.
-```
+</pre>
 
 ### Keyboard keys
 
 In GitHub Flavored Markdown, you can use a `<kbd>` tag to represent keyboard
 keys.
 
-```md
+<pre align=""left"">
 Your computer crashed? Try sending a
 <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd>
-```
+</pre>
 
 ### Tables
 
 Tables are only available in GitHub Flavored Markdown and are slightly
 cumbersome, but if you really want it:
 
-```md
+<pre align=""left"">
 | Col1         | Col2     | Col3          |
 | :----------- | :------: | ------------: |
 | Left-aligned | Centered | Right-aligned |
 | blah         | blah     | blah          |
-```
+</pre>
 
 or, for the same results
 
-```md
+<pre align=""left"">
 Col 1 | Col2 | Col3
 :-- | :-: | --:
 Ugh this is so ugly | make it | stop
-```
+</pre>
 
 ## Markdownlint
 
@@ -363,13 +314,13 @@ In order to simplify work with Markdown and to unify its coding style,
 as well as a plugin for some IDEs, it can be used to ensure validity and
 readability of Markdown.
 
----
-
-## Further reading
-
-For more info, check out John Gruber's official post of syntax [here](http://daringfireball.net/projects/markdown/syntax) and Adam Pritchard's great cheatsheet [here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+What is some further reading for Markdown?¬"
+For more info, check out John Gruber's official post of syntax <a href=""http://daringfireball.net/projects/markdown/syntax"">here</a> and Adam Pritchard's great cheatsheet <a href=""https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet"">here</a>.
 
 If you want to learn more on some major Markdown flavors' features, see:
 
-- [GitHub Flavored Markdown](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
-- [GitLab Flavored Markdown](https://docs.gitlab.com/ee/user/markdown.html)
+<ul align=""left"">
+  <li><a href=""https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax"">GitHub Flavored Markdown</a></li>
+  <li><a href=""https://docs.gitlab.com/ee/user/markdown.html"">GitLab Flavored Markdown</a></li>
+</ul>
+"
