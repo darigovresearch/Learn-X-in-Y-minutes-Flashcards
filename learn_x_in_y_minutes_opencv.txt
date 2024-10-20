@@ -1,6 +1,6 @@
-What is OpenCV?|OpenCV (Open Source Computer Vision) is a library of programming functions mainly aimed at real-time computer vision. Originally developed by Intel, it was later supported by Willow Garage then Itseez (which was later acquired by Intel).
-What does OpenCV support?|It currently supports wide variety of languages like, C++, Python, Java, etc.
-How do you instal OpenCV?|"Please refer to these articles for installation of OpenCV on your computer.
+What is OpenCV? (Learn X in Y minutes OpenCV)|OpenCV (Open Source Computer Vision) is a library of programming functions mainly aimed at real-time computer vision. Originally developed by Intel, it was later supported by Willow Garage then Itseez (which was later acquired by Intel).
+What does OpenCV support? (Learn X in Y minutes OpenCV)|It currently supports wide variety of languages like, C++, Python, Java, etc.
+How do you instal OpenCV? (Learn X in Y minutes OpenCV)|"Please refer to these articles for installation of OpenCV on your computer.
 
 <ul align=""left"">
 	<li>Windows Installation Instructions: <a href=""https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_setup/py_setup_in_windows/py_setup_in_windows.html#install-opencv-python-in-windows"">https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_setup/py_setup_in_windows/py_setup_in_windows.html#install-opencv-python-in-windows</a></li>
@@ -8,37 +8,37 @@ How do you instal OpenCV?|"Please refer to these articles for installation of Op
 	<li>Linux Installation Instructions (Ubuntu 18.04): <a href=""https://www.pyimagesearch.com/2018/05/28/ubuntu-18-04-how-to-install-opencv"">https://www.pyimagesearch.com/2018/05/28/ubuntu-18-04-how-to-install-opencv</a></li>
 </ul>
 "
-What kind of OpenCV will we be focusing on?|Here we will be focusing on Python implementation of OpenCV
-How do you import OpenCV in Python?|"
+What kind of OpenCV will we be focusing on? (Learn X in Y minutes OpenCV)|Here we will be focusing on Python implementation of OpenCV
+How do you import OpenCV in Python? (Learn X in Y minutes OpenCV)|"
 <pre align=""left"">
 import cv2
 </pre>
 "
-How do you read an image in OpenCV?|"
+How do you read an image in OpenCV? (Learn X in Y minutes OpenCV)|"
 <pre align=""left"">
 img = cv2.imread('cat.jpg')
 </pre>
 "
-What function is used to display an image in OpenCV?|The <code>imshow()</code> function is used to display the image. Your first argument is the title of the window and second parameter is image. If you are getting an error, Object Type None, your image path may be wrong. Please recheck the path to the image
-What is an example of displaying an image in OpenCV?|"
+What function is used to display an image in OpenCV? (Learn X in Y minutes OpenCV)|The <code>imshow()</code> function is used to display the image. Your first argument is the title of the window and second parameter is image. If you are getting an error, Object Type None, your image path may be wrong. Please recheck the path to the image
+What is an example of displaying an image in OpenCV? (Learn X in Y minutes OpenCV)|"
 <pre align=""left"">
 cv2.imshow('Image', img)
 cv2.waitKey(0)
 </pre>
 "
-What should you know about <code>waitKey()</code> in OpenCV?|<code>waitKey()</code> is a keyboard binding function and takes an argument in milliseconds. For GUI events you MUST use <code>waitKey()</code> function.
-How do you write an image in OpenCV?|"
+What should you know about <code>waitKey()</code> in OpenCV? (Learn X in Y minutes OpenCV)|<code>waitKey()</code> is a keyboard binding function and takes an argument in milliseconds. For GUI events you MUST use <code>waitKey()</code> function.
+How do you write an image in OpenCV? (Learn X in Y minutes OpenCV)|"
 <pre align=""left"">
 cv2.imwrite('catgray.png', img)
 </pre>
 The first argument is the file name and second is the image
 "
-How do you convert image to grayscale in OpenCV?|"
+How do you convert image to grayscale in OpenCV? (Learn X in Y minutes OpenCV)|"
 <pre align=""left"">
 gray_image = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 </pre>
 "
-How do you capture video from awebcam in OpenCV?|"
+How do you capture video from awebcam in OpenCV? (Learn X in Y minutes OpenCV)|"
 <pre align=""left"">
 cap = cv2.VideoCapture(0)
 # 0 is your camera, if you have multiple cameras, you need to enter their id
@@ -53,7 +53,7 @@ while True:
 cap.release()
 </pre>
 "
-How do you play a video from file in OpenCV?|"
+How do you play a video from file in OpenCV? (Learn X in Y minutes OpenCV)|"
 <pre align=""left"">
 cap = cv2.VideoCapture('movie.mp4')
 while cap.isOpened():
@@ -66,71 +66,71 @@ while cap.isOpened():
 cap.release()
 </pre>
 "
-How do you draw a line in OpenCV in OpenCV?|"
+How do you draw a line in OpenCV in OpenCV? (Learn X in Y minutes OpenCV)|"
 <pre align=""left"">
 # cv2.line(img, (x,y), (x1,y1), (color->r,g,b->0 to 255), thickness)
 cv2.line(img, (0, 0), (511, 511), (255, 0, 0), 5)
 </pre>
 "
-How do you draw a rectangle in OpenCV?|"
+How do you draw a rectangle in OpenCV? (Learn X in Y minutes OpenCV)|"
 <pre align=""left"">
 # cv2.rectangle(img, (x,y), (x1,y1), (color->r,g,b->0 to 255), thickness)
 # thickness = -1 used for filling the rectangle
 cv2.rectangle(img, (384, 0), (510, 128), (0, 255, 0), 3)
 </pre>
 "
-How do you draw a circle in OpenCV?|"
+How do you draw a circle in OpenCV? (Learn X in Y minutes OpenCV)|"
 <pre align=""left"">
 cv2.circle(img, (xCenter,yCenter), radius, (color->r,g,b->0 to 255), thickness)
 cv2.circle(img, (200, 90), 100, (0, 0, 255), -1)
 </pre>
 "
-How do you draw an ellipse in OpenCV?|"
+How do you draw an ellipse in OpenCV? (Learn X in Y minutes OpenCV)|"
 <pre align=""left"">
 cv2.ellipse(img, (256, 256), (100, 50), 0, 0, 180, 255, -1)
 </pre>
 "
-How do you add text on images in OpenCV?|"
+How do you add text on images in OpenCV? (Learn X in Y minutes OpenCV)|"
 <pre align=""left"">
 cv2.putText(img, ""Hello World!!!"", (x, y), cv2.FONT_HERSHEY_SIMPLEX, 2, 255)
 </pre>
 "
-How do you blend images in OpenCV?|"
+How do you blend images in OpenCV? (Learn X in Y minutes OpenCV)|"
 <pre align=""left"">
 img1 = cv2.imread('cat.png')
 img2 = cv2.imread('openCV.jpg')
 dst = cv2.addWeighted(img1, 0.5, img2, 0.5, 0)
 </pre>
 "
-What are two examples of image thresholding in OpenCV?|Binary and adaptive
-How do you binary thresholding in OpenCV?|"
+What are two examples of image thresholding in OpenCV? (Learn X in Y minutes OpenCV)|Binary and adaptive
+How do you binary thresholding in OpenCV? (Learn X in Y minutes OpenCV)|"
 <pre align=""left"">
 _, thresImg = cv2.threshold(img, 127, 255, cv2.THRESH_BINARY)
 </pre>
 "
-How do you adaptive thresholding in OpenCV?|"
+How do you adaptive thresholding in OpenCV? (Learn X in Y minutes OpenCV)|"
 <pre align=""left"">
 adapThres = cv2.adaptiveThreshold(img, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 11, 2)
 </pre>
 "
-What are two examples of bluring in OpenCV?|Gaussian and median
-How do you gaussian blurring in OpenCV?|"
+What are two examples of bluring in OpenCV? (Learn X in Y minutes OpenCV)|Gaussian and median
+How do you gaussian blurring in OpenCV? (Learn X in Y minutes OpenCV)|"
 <pre align=""left"">
 blur = cv2.GaussianBlur(img, (5, 5), 0)
 </pre>
 "
-How do you median blurring in OpenCV?|"
+How do you median blurring in OpenCV? (Learn X in Y minutes OpenCV)|"
 <pre align=""left"">
 medianBlur = cv2.medianBlur(img, 5)
 </pre>
 "
-How do you canny edge detection in OpenCV?|"
+How do you canny edge detection in OpenCV? (Learn X in Y minutes OpenCV)|"
 <pre align=""left"">
 img = cv2.imread('cat.jpg', 0)
 edges = cv2.Canny(img, 100, 200)
 </pre>
 "
-How do you face detection using haar cascades in OpenCV?|"Download Haar Cascades from <a href=""https://github.com/opencv/opencv/blob/master/data/haarcascades/"">https://github.com/opencv/opencv/blob/master/data/haarcascades/</a>
+How do you face detection using haar cascades in OpenCV? (Learn X in Y minutes OpenCV)|"Download Haar Cascades from <a href=""https://github.com/opencv/opencv/blob/master/data/haarcascades/"">https://github.com/opencv/opencv/blob/master/data/haarcascades/</a>
 <pre align=""left"">
 import cv2
 import numpy as np
@@ -156,13 +156,13 @@ cv2.imshow('img', img)
 cv2.waitKey(0)
 </pre>
 "
-How do you destroy all windows in OpenCV?|"
+How do you destroy all windows in OpenCV? (Learn X in Y minutes OpenCV)|"
 <pre align=""left"">
 cv2.destroyAllWindows()
 </pre>
 If you wish to destroy specific window pass the exact name of window you created.
 "
-What is some further reading for OpenCV?|"
+What is some further reading for OpenCV? (Learn X in Y minutes OpenCV)|"
 <ul align=""left"">
 	<li>Download Cascade from <a href=""https://github.com/opencv/opencv/blob/master/data/haarcascades"">https://github.com/opencv/opencv/blob/master/data/haarcascades</a></li>
 	<li>OpenCV drawing Functions <a href=""https://docs.opencv.org/2.4/modules/core/doc/drawing_functions.html"">https://docs.opencv.org/2.4/modules/core/doc/drawing_functions.html</a></li>
